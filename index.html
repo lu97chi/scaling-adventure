@@ -17,6 +17,19 @@
 <body>
     <header style="height: 100vh;">
         <nav class="nav-mobile-container navbar  fixed-top d-block d-lg-none" style="padding: 0">
+                <div class="row show-menu">
+                        <div class="col-4 ">
+                            <a href="#" style="margin-right:10vw">CLIENTES</a>|
+                        </div>
+                        <div class="col-4">
+                            <a href="#">EJECUTIVOS</a>
+                        </div>
+                        <div class="col-4 social-network">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </div>
+                    </div>
             <div class="row">
                 <div class="col-8">
                     <a class="navbar-brand container" href="#">
@@ -30,18 +43,28 @@
 
                 </div>
             </div>
-            <div class="row show-menu">
-                <div class="col-4 ">
-                    <a href="#" style="margin-right:10vw">CLIENTES</a>|
-                </div>
-                <div class="col-4">
-                    <a href="#">EJECUTIVOS</a>
-                </div>
-                <div class="col-4 social-network">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                </div>
+            <div class="row show-menu-bot">
+                    <ul>
+                            <li class="navigation us-section-m">
+                                NOSOTROS
+                            </li>
+                            <li class="navigation team-section">
+                                EQUIPO DE TRABAJO
+                            </li>
+                            <li class="navigation products-section-m">
+                                PRODUCTOS Y SERVICIOS
+                            </li>
+                            <li class="navigation culture-section-m">
+                                CULTURA FINANCIERA
+                            </li>
+                            <li class="navigation contact-section">
+                                CONTACTO
+                            </li>
+                            <li class="navigation blog-section">
+                                BLOG
+                            </li>
+                        </ul>
+                      
             </div>
 
         </nav>
@@ -68,22 +91,22 @@
                             </span>
                         </p>
                         <p>
-                            <span>
+                            <span class="navigation us-section">
                                 NOSOTROS
                             </span>
-                            <span>
+                            <span class="navigation team-section">
                                 EQUIPO DE TRABAJO
                             </span>
-                            <span>
+                            <span class="navigation products-section">
                                 PRODUCTOS Y SERVICIOS
                             </span>
-                            <span>
+                            <span class="navigation culture-section">
                                 CULTURA FINANCIERA
                             </span>
-                            <span>
+                            <span class="navigation contact-section">
                                 CONTACTO
                             </span>
-                            <span>
+                            <span class="navigation blog-section">
                                 BLOG
                             </span>
                         </p>
@@ -172,7 +195,7 @@
             </a>
         </div>
     </header>
-    <section class="us container-fluid">
+    <section class="us container-fluid" id="us-section">
         <div class="row">
 
             <div class="col-md-4 col-12 products-right">
@@ -291,7 +314,7 @@
 
 
     </section>
-    <section class="us-mobile container-fluid">
+    <section class="us-mobile container-fluid" id="us-section-m">
         <div class="row">
 
             <div class="col-md-4 col-12 products-right">
@@ -403,7 +426,7 @@
                 </div>
             </div>
     </section>
-    <section class="team container-fluid">
+    <section class="team container-fluid" id="team-section">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="title text-center">
@@ -561,7 +584,7 @@
         </div>
 
     </section>
-    <section class="products container-fluid">
+    <section class="products container-fluid" id="products-section">
         <div class="row">
             <div class="col-md-8 col-12 products-left" style="padding: 0">
                 <div class="row">
@@ -669,7 +692,7 @@
             </div>
         </div>
     </section>
-    <section class="products-mobile container-fluid">
+    <section class="products-mobile container-fluid" id="products-section-m">
             <div class="row">
                     <div class="col-12 products-right">
                             <div class="row product-title-container">
@@ -681,7 +704,7 @@
                             <div class="row text-center product-items-container">
                                 <div class="col-12" style="padding: 0">
                                     <div class="item-container">
-                                        <button class="option-list btn-block text-center" data-toggle="collapse" data-target="#collapsePM1" id='collapeTriggerPM1'>
+                                        <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM1" id='collapeTriggerPM1'>
                                                 <i class="arrow left"></i>
                                             
                                             Cómo trabajamos
@@ -692,7 +715,7 @@
                                 </div>
                                 <div class="col-12" style="padding: 0">
                                     <div class="item-container">
-                                        <button class="option-list btn-block text-center active" data-toggle="collapse" data-target="#collapsePM2" id='collapeTriggerPM2'>
+                                        <button class="option-list option-list-products btn-block text-center active" data-toggle="collapse" data-target="#collapsePM2" id='collapeTriggerPM2'>
                                                 <i class="arrow left"></i>
                                             
                                             Tipos de inversión
@@ -702,7 +725,7 @@
                                 </div>
                                 <div class="col-12" style="padding: 0">
                                     <div class="item-container ">
-                                        <button class="option-list btn-block text-center" data-toggle="collapse" data-target="#collapsePM3" id='collapeTriggerPM3'>
+                                        <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM3" id='collapeTriggerPM3'>
                                                 <i class="arrow left"></i>
             
                                             Garantía de inversión
@@ -725,7 +748,7 @@
                         </div>
                 <div class="col-12 products-left" style="padding: 0">
                     <div class="row">
-                        <div class="collapse show" id="collapsePM1">
+                        <div class="collapse products-dymamic show" id="collapsePM1">
                             <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
                                 <div class="dynamic-selected s1 align-self-center">
                                     <h2 class="text-center">Como trabajamos</h2>
@@ -736,7 +759,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="collapse" id="collapsePM2">
+                        <div class="collapse products-dymamic" id="collapsePM2">
                             <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
                                 <div class="dynamic-selected s2 align-self-center">
                                     <h2 class="text-center">Tipos de inversión</h2>
@@ -751,7 +774,7 @@
                             </div>
                         </div>
     
-                        <div class="collapse" id="collapsePM3">
+                        <div class="collapse products-dymamic" id="collapsePM3">
                             <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
                                 <div class="dynamic-selected s3 align-self-center">
                                     <h2 class="text-center">Garantia de inversión</h2>
@@ -761,7 +784,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="collapse" id="collapsePM4">
+                        <div class="collapse products-dymamic" id="collapsePM4">
                             <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
                                 <div class="dynamic-selected s4 align-self-center">
                                     <h2 class="text-center">Asesoría financiera</h2>
@@ -810,7 +833,7 @@
             </a>
         </div>
     </section>
-    <section class="culture container-fluid">
+    <section class="culture container-fluid" id="culture-section">
         <div class="row">
 
             <div class="col-md-4 col-12 products-right">
@@ -884,7 +907,7 @@
                 </div>
             </div>
     </section>
-    <section class="culture-mobile container-fluid">
+    <section class="culture-mobile container-fluid" id="culture-section-m">
             <div class="row">
     
                 <div class="col-md-4 col-12 products-right">
@@ -897,7 +920,7 @@
                     <div class="row text-left product-items-container">
                         <div class="col-12" style="padding: 0">
                             <div class="item-container">
-                                <button class="option-list text-center btn-block" data-toggle="collapse" data-target="#collapseCM1" id='collapeTriggerCM1'>
+                                <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM1" id='collapeTriggerCM1'>
                                     <i class="arrow right"></i>Benefecios de Increser</button>
     
     
@@ -908,7 +931,7 @@
                         </div>
                         <div class="col-12" style="padding: 0">
                             <div class="item-container">
-                                <button class="option-list text-center btn-block" data-toggle="collapse" data-target="#collapseCM2" id='collapeTriggerCM2'>
+                                <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM2" id='collapeTriggerCM2'>
                                     <i class="arrow right"></i>Tipos de inversión
                                 </button>
                                 <div class="divider"></div>
@@ -919,7 +942,7 @@
                 </div>
                 <div class="col-md-8 col-12 products-left" style="padding: 0">
                     <div class="row">
-                        <div class="collapse show" id="collapseCM1">
+                        <div class="collapse culture-dynamic show" id="collapseCM1">
                             <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
                                 <div class="dynamic-selected s1 align-self-center">
                                     <h2 class="text-center">Beneficios de invertir en Increser</h2>
@@ -939,7 +962,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="collapse" id="collapseCM2">
+                        <div class="collapse culture-dynamic" id="collapseCM2">
                             <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
                                 <div class="dynamic-selected s2 align-self-center">
                                     <h2 class="text-center">Tipos de inversión</h2>
@@ -958,7 +981,7 @@
                     </div>
                 </div>
     </section>
-    <section class="blog container-fluid">
+    <section class="blog container-fluid" id="blog-section">
         <div class="container">
             <div class="row product-title-container">
                 <div class="col-12">
@@ -1206,7 +1229,7 @@
             </div>
         </div>
     </section>
-    <section class="contact container-fluid text-white">
+    <section class="contact container-fluid text-white" id="contact-section">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="title text-center">

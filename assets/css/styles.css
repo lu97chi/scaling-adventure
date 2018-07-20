@@ -42,7 +42,7 @@ header {
         font-size: 28px; }
     header .nav-mobile-container .show-menu {
       background-color: #ffffff;
-      padding-left: 5%; }
+      padding-left: 11%; }
       header .nav-mobile-container .show-menu div {
         padding-top: 4%;
         padding-bottom: 4%; }
@@ -51,6 +51,17 @@ header {
           font-size: 3vw; }
       header .nav-mobile-container .show-menu .social-network {
         color: #FDC561; }
+    header .nav-mobile-container .show-menu-bot {
+      background-color: rgba(5, 44, 65, 0.4);
+      padding-left: 5%; }
+      header .nav-mobile-container .show-menu-bot ul {
+        margin-top: 5%; }
+        header .nav-mobile-container .show-menu-bot ul li {
+          color: #ffffff;
+          font-size: 3vw;
+          padding-left: 15%;
+          font-weight: bold;
+          margin-bottom: 5%; }
   header .carousel-indicators li {
     display: inline-block;
     width: 15px;
@@ -631,6 +642,17 @@ footer {
       .products-mobile .row .products-right {
         padding-left: 0;
         padding-right: 0; }
+        .products-mobile .row .products-right .product-items-container .active-item {
+          background-color: #052C41;
+          color: #ffffff;
+          border: none;
+          outline: none; }
+          .products-mobile .row .products-right .product-items-container .active-item i {
+            border: solid #ffffff;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-right: 1.5vw; }
         .products-mobile .row .products-right .product-items-container button {
           padding-top: 4%;
           padding-bottom: 4%;
@@ -640,12 +662,12 @@ footer {
           cursor: pointer;
           transition: .3s ease all;
           background-color: transparent; }
-          .products-mobile .row .products-right .product-items-container button:hover, .products-mobile .row .products-right .product-items-container button:active, .products-mobile .row .products-right .product-items-container button:focus {
+          .products-mobile .row .products-right .product-items-container button:hover {
             background-color: #052C41;
             color: #ffffff;
             border: none;
             outline: none; }
-            .products-mobile .row .products-right .product-items-container button:hover i, .products-mobile .row .products-right .product-items-container button:active i, .products-mobile .row .products-right .product-items-container button:focus i {
+            .products-mobile .row .products-right .product-items-container button:hover i {
               border: solid #ffffff;
               border-width: 0 3px 3px 0;
               display: inline-block;
@@ -700,6 +722,16 @@ footer {
       .culture-mobile .row .products-right {
         padding-left: 0;
         padding-right: 0; }
+        .culture-mobile .row .products-right .product-items-container .active-item {
+          background-color: #052C41;
+          border: none;
+          color: #FDC561; }
+          .culture-mobile .row .products-right .product-items-container .active-item i {
+            border: solid #ffffff;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-right: 1.5vw; }
         .culture-mobile .row .products-right .product-items-container button {
           padding-top: 4%;
           padding-bottom: 4%;
@@ -709,12 +741,12 @@ footer {
           cursor: pointer;
           transition: .3s ease all;
           background-color: transparent; }
-          .culture-mobile .row .products-right .product-items-container button:hover, .culture-mobile .row .products-right .product-items-container button:active, .culture-mobile .row .products-right .product-items-container button:focus {
+          .culture-mobile .row .products-right .product-items-container button:hover {
             background-color: #052C41;
             color: #ffffff;
             border: none;
             outline: none; }
-            .culture-mobile .row .products-right .product-items-container button:hover i, .culture-mobile .row .products-right .product-items-container button:active i, .culture-mobile .row .products-right .product-items-container button:focus i {
+            .culture-mobile .row .products-right .product-items-container button:hover i {
               border: solid #ffffff;
               border-width: 0 3px 3px 0;
               display: inline-block;

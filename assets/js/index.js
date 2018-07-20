@@ -1,17 +1,14 @@
 $(function () {
 	var navbar = $('.navbar');
-	$('.show-menu').css('display', 'none')
-
+	$('.show-menu-bot').css('display', 'none')
 	var activeUs = $('.option-list-us:visible:first').attr('id');
 	var activeProduct = $('.option-list-products:visible:first').attr('id');
 	var activeCulture = $('.option-list-culture:visible:first').attr('id');
-
-
 	$('.option-list-us:visible:first').addClass('active-item')
 	$('.option-list-products:visible:first').addClass('active-item')
 	$('.option-list-culture:visible:first').addClass('active-item')
 	$(window).scroll(function () {
-		if ($(window).scrollTop() <= 40) {
+		if ($(window).scrollTop() <= 20) {
 			navbar.removeClass('navbar-scroll');
 		} else {
 			navbar.addClass('navbar-scroll');
@@ -58,16 +55,19 @@ $(function () {
 	let menu = false;
 	$('.menu-drop').on('click', () => {
 		menu ? menu = false : menu = true;
-		menu ? $('.show-menu').animate({
+		menu ? $('.show-menu-bot').animate({
 			height: 'toggle',
 			display: 'none'
 		})
-			: $('.show-menu').animate({
+			: $('.show-menu-bot').animate({
 				height: "toggle",
 				display: 'none'
 			});
 	})
+	$('.navigation').on('click', (e)=>{
+		let navigate = e.target.className.split(' ')[1];
+		$('html, body').animate({
+			scrollTop: $(`#${navigate}`).offset().top - 120
+		},500)
+	})
 });
-$(document).on('click', '.same', () => {
-	console.log($(this))
-})

@@ -101,6 +101,19 @@
                 padding-left: 0;
                 padding-right: 0;
                 .product-items-container {
+                    .active-item{
+                        background-color: #052C41;
+                            color: #ffffff;
+                            border: none;
+                            outline: none;
+                            i {
+                                border: solid #ffffff;
+                                border-width: 0 3px 3px 0;
+                                display: inline-block;
+                                padding: 3px;
+                                margin-right: 1.5vw;
+                            }
+                    }
                     button {
                         padding-top: 4%;
                         padding-bottom: 4%;
@@ -110,7 +123,7 @@
                         cursor: pointer;
                         transition: .3s ease all;
                         background-color: transparent;
-                        &:hover, &:active, &:focus {
+                        &:hover {
                             background-color: #052C41;
                             color: #ffffff;
                             border: none;
@@ -194,6 +207,18 @@
                 padding-left: 0;
                 padding-right: 0;
                 .product-items-container {
+                    .active-item{
+                        background-color: #052C41;
+                            border: none;
+                            color: #FDC561;
+                            i {
+                                border: solid #ffffff;
+                                border-width: 0 3px 3px 0;
+                                display: inline-block;
+                                padding: 3px;
+                                margin-right: 1.5vw;
+                            }
+                        }
                     button {
                         padding-top: 4%;
                         padding-bottom: 4%;
@@ -203,7 +228,7 @@
                         cursor: pointer;
                         transition: .3s ease all;
                         background-color: transparent;
-                        &:hover, &:active, &:focus {
+                        &:hover {
                             background-color: #052C41;
                             color: #ffffff;
                             border: none;
