@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Light';
+
+}
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/Gotham-Light.otf');
+}
+@font-face{
+    font-family: 'Gotham Bold';
+    src: url('../fonts/Gotham-Bold.otf');
+}
+button{
+    cursor: pointer;
+}
+
+
+// colors
+// #052C41
+// #f4f8fb
+// rgb(255, 196, 113)
+
+// fonts
+// Gotham Light
+@import 'header';
+@import 'us';
+@import 'team';
+@import 'products';
+@import 'phrases';
+@import 'culture';
+@import 'blog';
+@import 'contact';
+@import 'footer';
+@import 'responsive';

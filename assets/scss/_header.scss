@@ -1,0 +1,127 @@
+header {
+    .navbar-desktop-container{
+        transition: .3s ease all;
+        .navbar-brand{
+            img{
+                margin-top: 6%;
+                margin-left: 30%;
+            }
+        }
+        .navbar-options{
+            cursor: pointer;
+            .social-network{
+                font-size: 1.5vw;
+            }
+            p{
+                span{
+                    color: #ffffff;
+                    font-size: 1vw;
+                    margin-right: 2%;
+                    &:hover{
+                        text-decoration: underline;
+        
+                    }
+                }
+            }
+        }
+    }
+    .nav-mobile-container{
+        transition: .3s ease all;
+        border-bottom: none;
+        .menu-drop{
+            background-color:transparent;
+            border: none;
+            color: #ffffff;
+            margin-right: 15%;
+            margin-top: 15%;
+            i{
+                font-size: 28px;
+            }
+        
+        }
+        .show-menu{
+            background-color: #ffffff;
+            padding-left: 5%;
+            
+            div{
+                padding-top: 4%;
+                padding-bottom: 4%;
+                a{
+                    color: #052C41;
+                    font-size: 3vw;
+                }
+            }
+            .social-network{
+                color: #FDC561;
+            }
+        }
+    }
+    
+    height: 100vh;
+    .carousel-indicators li {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+        text-indent: 0;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        background-color: #052C41;
+    }
+    .carousel-indicators .active {
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+        background-color: rgb(255, 196, 113);
+    }
+    #carouselIndicators1 {
+        height: 100vh;
+        .first-slide,
+        .second-slide,
+        .third-slide {
+            -webkit-box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
+            -moz-box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
+            box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
+            height: 100vh;
+            background: url('../images/7.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            .header-text {
+                color: #ffffff;
+                position: absolute;
+                top: 35%;
+                left: 10%;
+                h2 {
+                    font-size: 4vw;
+                }
+                h3 {
+                    font-size: 7vw;
+                    color: rgb(255, 196, 113);
+                }
+                h1 {
+                    font-size: 6vw;
+                    font-weight: 600;
+                }
+                button {
+                    background-color: transparent;
+                    border: 2px solid rgb(255, 196, 113);
+                    color: rgb(255, 196, 113);
+                    font-size: 18px;
+                    padding: 1% 6%;
+                    font-weight: 800;
+                    transition: .3s ease all;
+                    margin-left: 20%;
+                    &:hover {
+                        background-color: rgb(255, 196, 113);
+                        color: #ffffff;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+.navbar-scroll{
+    background-color: rgba(5,44,65,.8);
+}
