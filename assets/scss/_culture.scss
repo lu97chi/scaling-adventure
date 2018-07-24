@@ -80,9 +80,11 @@
                 }
             }
             .active-item{
-                background-color: #052C41;
+                    button{
+                    background-color: #052C41;
                     border: none;
                     color: #FDC561;
+                    }
                     i {
                         border: solid #ffffff;
                         border-width: 0 3px 3px 0;
@@ -99,9 +101,10 @@
                 margin-bottom: 0;
                 border: none;
                 cursor: pointer;
+                outline: none;
                 transition: .3s ease all;
                 background-color: transparent;
-                
+
                 // &:hover {
                 //     background-color: #052C41;
                 //     border: none;

@@ -3,6 +3,11 @@
     color: #ffffff;
     padding-top: 5%;
     padding-bottom: 5%;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    height: 3vw !important;
+    width: 3vw !important;
+    }
     h2::before{
         content:open-quote;
         color: #FDC561;

@@ -25,7 +25,7 @@ header {
   header .navbar-desktop-container {
     transition: .3s ease all; }
     header .navbar-desktop-container .navbar-brand img {
-      margin-top: 6%;
+      margin-top: 3%;
       margin-left: 30%; }
     header .navbar-desktop-container .navbar-options {
       cursor: pointer; }
@@ -80,7 +80,7 @@ header {
         color: #FDC561;
         margin-right: 7%; }
     header .nav-mobile-container .show-menu-bot {
-      background-color: rgba(5, 44, 65, 0.4);
+      background-color: rgba(5, 44, 65, 0.9);
       padding-left: 5%; }
       header .nav-mobile-container .show-menu-bot ul {
         margin-top: 1%; }
@@ -175,6 +175,8 @@ header {
     display: flex;
     animation-duration: .5s;
     z-index: 1; }
+    .us .products-left .dynamic-box .dynamic-selected .last-us {
+      width: 100%; }
     .us .products-left .dynamic-box .dynamic-selected h2 {
       margin-left: 12%;
       margin-top: 6%;
@@ -197,7 +199,8 @@ header {
       transition: .3s ease all;
       font-family: 'Gotham Bold';
       letter-spacing: 1px;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      outline: none; }
       .us .products-left .dynamic-box .dynamic-selected button:hover {
         color: #ffffff;
         background-color: #052C41; }
@@ -288,12 +291,15 @@ header {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6d8d8',GradientType=0 );
   /* IE6-9 */ }
-  .team .team-members .team-member img {
-    cursor: pointer;
-    margin-top: 5%;
-    width: 50%;
-    height: 100%;
-    border: 2px solid #ffc471; }
+  .team .team-members .team-member .imageContainer {
+    width: 150px;
+    height: 150px; }
+    .team .team-members .team-member .imageContainer img {
+      cursor: pointer;
+      margin-top: 5%;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #ffc471; }
   .team .team-members .team-member .team-member-text {
     color: #052C41;
     padding-top: 7%;
@@ -376,6 +382,7 @@ header {
   border: none;
   cursor: pointer;
   transition: .3s ease all;
+  outline: none;
   background-color: transparent; }
 .products .products-right i {
   border: solid #FDC561;
@@ -392,6 +399,10 @@ header {
   color: #ffffff;
   padding-top: 5%;
   padding-bottom: 5%; }
+  .phrases .carousel-control-prev-icon,
+  .phrases .carousel-control-next-icon {
+    height: 3vw !important;
+    width: 3vw !important; }
   .phrases h2::before {
     content: open-quote;
     color: #FDC561; }
@@ -464,16 +475,16 @@ header {
   height: 1px;
   width: 70%;
   border-top: #052C41 3px solid; }
-.culture .products-right .product-items-container .active-item {
+.culture .products-right .product-items-container .active-item button {
   background-color: #052C41;
   border: none;
   color: #FDC561; }
-  .culture .products-right .product-items-container .active-item i {
-    border: solid #ffffff;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    margin-right: 1.5vw; }
+.culture .products-right .product-items-container .active-item i {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 1.5vw; }
 .culture .products-right .product-items-container button {
   padding-left: 9%;
   padding-top: 17.9%;
@@ -482,6 +493,7 @@ header {
   margin-bottom: 0;
   border: none;
   cursor: pointer;
+  outline: none;
   transition: .3s ease all;
   background-color: transparent; }
 .culture .products-right i {
@@ -586,10 +598,15 @@ footer {
     padding-top: 3%; }
   footer ul li {
     cursor: pointer; }
-  footer .contact-credentials, footer .social-network {
+  footer .list-inline-item {
+    font-size: 1vw; }
+  footer .contact-credentials span, footer .social-network span {
     color: #FDC561; }
-  footer .social-network i {
-    font-size: 24px; }
+  footer .social-network a {
+    margin-right: 5%; }
+    footer .social-network a i {
+      color: #FDC561;
+      font-size: 24px; }
   footer .copyright {
     font-weight: bold; }
 
@@ -849,7 +866,7 @@ footer {
     /* IE10+ */
     background: linear-gradient(to bottom, rgba(244, 248, 251, 0) 16%, #f4f8fb 16%);
     /* W3C */ } }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 798px) {
   .about-footer {
     display: none; } }
 @media only screen and (max-width: 892px) {

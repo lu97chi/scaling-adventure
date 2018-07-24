@@ -33,13 +33,18 @@
         background: -ms-linear-gradient(top,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* IE10+ */
         background: linear-gradient(to bottom,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6d8d8',GradientType=0 ); /* IE6-9 */
-        img{
-            cursor: pointer;
-            margin-top: 5%;
-            width: 50%;
-            height: 100%;
-            border: 2px solid rgb(255, 196, 113);
+            .imageContainer{
+                width: 150px;
+                    height: 150px;
+                img{
+                    cursor: pointer;
+                    margin-top: 5%;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid rgb(255, 196, 113);
+                    }
             }
+        
         .team-member-text{
             color: #052C41;
             padding-top: 7%;

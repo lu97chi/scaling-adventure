@@ -10,12 +10,13 @@
 	});
 
 	$('.product-items-container').on('click', '.option-list-us',function (e)  {
-		// debugger;
 		let i = $(this);
 		i.parent().siblings().removeClass('active-item');
 		i.parent().addClass('active-item');
 		$('.us-dynamic').collapse('hide')	
 	});
+
+	
 
 	$('.product-items-container').on('click', '.option-list-products', function(){
 		let i = $(this);
@@ -24,6 +25,13 @@
 		$('.products-dymamic').collapse('hide')	
 	})
 	$('.product-items-container').on('click', '.option-list-culture', function(){
+		let i = $(this);
+		i.parent().siblings().removeClass('active-item');
+		i.parent().addClass('active-item');
+		$('.culture-dynamic').collapse('hide')	
+	})
+
+	$('.product-items-container').on('click', '.culture-mobil', function(){
 		let i = $(this);
 		i.parent().siblings().removeClass('active-item');
 		i.parent().addClass('active-item');
@@ -48,11 +56,16 @@
 		let navigate = e.target.className.split(' ')[1];
 		let dina;
 		$(window).width() > 768? dina = $('#nav-d').outerHeight() : dina = Math.floor($('#nav-m').outerHeight());
-		// debugger;
 		console.log(dina)
-		$('html, body').animate({
-			scrollTop: $(`#${navigate}`).offset().top - dina
-		},500)
+		
+		$('.show-menu-bot').animate({
+			height: 'toggle',
+			display: 'none'
+		},500, function(){
+			$('html, body').animate({
+				scrollTop: $(`#${navigate}`).offset().top - dina
+			},500)
+		})
 	})
 
 	$('.contact-button').on('click', ()=>{
