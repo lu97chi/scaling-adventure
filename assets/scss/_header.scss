@@ -140,6 +140,8 @@ header {
             background: -moz-linear-gradient(top,  rgba(7,41,66,0) 0%, rgba(7,41,66,0.02) 6%, rgba(7,41,66,0.09) 12%, rgba(7,41,66,0.57) 44%, rgba(7,41,66,0.78) 61%, rgba(7,41,66,0.85) 70%, rgba(7,41,66,0.91) 81%, rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
             background: -webkit-linear-gradient(top,  rgba(7,41,66,0) 0%,rgba(7,41,66,0.02) 6%,rgba(7,41,66,0.09) 12%,rgba(7,41,66,0.57) 44%,rgba(7,41,66,0.78) 61%,rgba(7,41,66,0.85) 70%,rgba(7,41,66,0.91) 81%,rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
             background: linear-gradient(to bottom,  rgba(7,41,66,0) 0%,rgba(7,41,66,0.02) 6%,rgba(7,41,66,0.09) 12%,rgba(7,41,66,0.57) 44%,rgba(7,41,66,0.78) 61%,rgba(7,41,66,0.85) 70%,rgba(7,41,66,0.91) 81%,rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
+background-size:cover;
+background-position:center;
             .header-text {
                 color: #ffffff;
                 position: absolute;
@@ -159,7 +161,7 @@ header {
                 }
                 button {
                     position: absolute; 
-                    top: 4.9vh;
+                    top:35%;
                     background-color: transparent;
                     border: 2px solid rgb(255, 196, 113);
                     color: rgb(255, 196, 113);

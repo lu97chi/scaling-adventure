@@ -9,34 +9,28 @@
 		}
 	});
 
-	$('.product-items-container').on('click', '.option-list-us',function (e)  {
+	$('.product-items-container').on('click', '.option-list-us', function ()  {
 		let i = $(this);
 		i.parent().siblings().removeClass('active-item');
-		i.parent().addClass('active-item');
+		i.parent().hasClass('active-item')? i.parent().removeClass('active-item'):i.parent().addClass('active-item')
 		$('.us-dynamic').collapse('hide')	
 	});
-
-	
 
 	$('.product-items-container').on('click', '.option-list-products', function(){
 		let i = $(this);
 		i.parent().siblings().removeClass('active-item');
-		i.parent().addClass('active-item');
+		i.parent().hasClass('active-item')? i.parent().removeClass('active-item'):i.parent().addClass('active-item')
+
 		$('.products-dymamic').collapse('hide')	
 	})
 	$('.product-items-container').on('click', '.option-list-culture', function(){
 		let i = $(this);
 		i.parent().siblings().removeClass('active-item');
-		i.parent().addClass('active-item');
+		i.parent().hasClass('active-item')? i.parent().removeClass('active-item'):i.parent().addClass('active-item')
+
 		$('.culture-dynamic').collapse('hide')	
 	})
 
-	$('.product-items-container').on('click', '.culture-mobil', function(){
-		let i = $(this);
-		i.parent().siblings().removeClass('active-item');
-		i.parent().addClass('active-item');
-		$('.culture-dynamic').collapse('hide')	
-	})
 	
 
 
