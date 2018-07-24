@@ -9,17 +9,48 @@ header {
         }
         .navbar-options{
             cursor: pointer;
+            .navigation{
+                border-right: 2px solid #ffffff;
+                padding-right: 1%;
+                &:last-child{
+                    border-right: none;
+                }
+            }
+            .option-navbar{
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-top: 1%;
+
+            }
+            .ejectutives{
+                margin-right: 5%;
+            }
+            .pipe{
+                font-size: 1vw;
+                font-weight: bold;
+            }
             .social-network{
-                font-size: 1.5vw;
+                a{
+                    i{
+                        color: #FDC561;
+                        font-size: 1.5vw;
+                        margin-right: 3%;
+                    }
+                }
             }
             p{
                 span{
                     color: #ffffff;
                     font-size: 1vw;
-                    margin-right: 2%;
+                    margin-right: 1%;
                     &:hover{
                         text-decoration: underline;
         
+                    }
+                }
+                .social-network{
+                    &:hover{
+                        text-decoration: none !important;
                     }
                 }
             }
@@ -44,34 +75,42 @@ header {
             padding-left: 11%;
             
             div{
-                padding-top: 4%;
-                padding-bottom: 4%;
+                padding-top: 1%;
+                padding-bottom: 1%;
                 a{
                     color: #052C41;
                     font-size: 3vw;
                 }
             }
             .social-network{
-                color: #FDC561;
+                
+                a{
+                    i{
+                        padding-top: 1.5%;
+                        color: #FDC561;
+                        margin-right: 7%;
+                    }
+                }
             }
         }
         .show-menu-bot{
             background-color: rgba(5, 44, 65, .4);
             padding-left: 5%;
             ul{
-                margin-top: 5%;
+                margin-top: 1%;
                 li{
                     color: #ffffff;
                     font-size: 3vw;
-                    padding-left: 15%;
+                    padding-left: 9%;
                     font-weight: bold;
-                    margin-bottom: 5%;
+                    margin-bottom: 5vh;
+                    width: 100vw;
+                    list-style: none;
                 }
             }
 
         }
     }
-    
     height: 100vh;
     .carousel-indicators li {
         display: inline-block;
@@ -92,16 +131,15 @@ header {
     }
     #carouselIndicators1 {
         height: 100vh;
+       
         .first-slide,
         .second-slide,
         .third-slide {
-            -webkit-box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
-            -moz-box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
-            box-shadow: inset 0px 0px 231px 106px rgba(5, 44, 65, 1);
+
             height: 100vh;
-            background: url('../images/7.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
+            background: -moz-linear-gradient(top,  rgba(7,41,66,0) 0%, rgba(7,41,66,0.02) 6%, rgba(7,41,66,0.09) 12%, rgba(7,41,66,0.57) 44%, rgba(7,41,66,0.78) 61%, rgba(7,41,66,0.85) 70%, rgba(7,41,66,0.91) 81%, rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
+            background: -webkit-linear-gradient(top,  rgba(7,41,66,0) 0%,rgba(7,41,66,0.02) 6%,rgba(7,41,66,0.09) 12%,rgba(7,41,66,0.57) 44%,rgba(7,41,66,0.78) 61%,rgba(7,41,66,0.85) 70%,rgba(7,41,66,0.91) 81%,rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
+            background: linear-gradient(to bottom,  rgba(7,41,66,0) 0%,rgba(7,41,66,0.02) 6%,rgba(7,41,66,0.09) 12%,rgba(7,41,66,0.57) 44%,rgba(7,41,66,0.78) 61%,rgba(7,41,66,0.85) 70%,rgba(7,41,66,0.91) 81%,rgba(7,41,66,0.93) 100%), url(../images/7.jpg) no-repeat;
             .header-text {
                 color: #ffffff;
                 position: absolute;
@@ -117,16 +155,20 @@ header {
                 h1 {
                     font-size: 6vw;
                     font-weight: 600;
+                    display: inline;
                 }
                 button {
+                    position: absolute; 
+                    top: 4.9vh;
                     background-color: transparent;
                     border: 2px solid rgb(255, 196, 113);
                     color: rgb(255, 196, 113);
-                    font-size: 18px;
-                    padding: 1% 6%;
+                    font-size: 1vw;
+                    padding: .5% 1%;
                     font-weight: 800;
+                    margin-left: 1vw;
                     transition: .3s ease all;
-                    margin-left: 20%;
+                    
                     &:hover {
                         background-color: rgb(255, 196, 113);
                         color: #ffffff;

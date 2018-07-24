@@ -11,64 +11,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="./assets/js/jquery-2.0.3.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header style="height: 100vh;">
-        <nav class="nav-mobile-container navbar  fixed-top d-block d-lg-none" style="padding: 0">
+        <nav class="nav-mobile-container navbar fixed-top d-block d-lg-none" style="padding: 0">
+            <div id="nav-m">
                 <div class="row show-menu">
-                        <div class="col-4 ">
-                            <a href="#" style="margin-right:10vw">CLIENTES</a>|
-                        </div>
-                        <div class="col-4">
-                            <a href="#">EJECUTIVOS</a>
-                        </div>
-                        <div class="col-4 social-network">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </div>
+                    <div class="col-4 ">
+                        <a href="#" style="margin-right:10vw">CLIENTES</a>|
                     </div>
-            <div class="row">
-                <div class="col-8">
-                    <a class="navbar-brand container" href="#">
-                        <img src="./assets/images/logo.png" alt="" style="margin-top: 3%">
-                    </a>
+                    <div class="col-4">
+                        <a href="#">EJECUTIVOS</a>
+                    </div>
+                    <div class="col-4 social-network">
+                        <a href="https://web.facebook.com/increser">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/incresermx/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-4 text-right">
-                    <button class="menu-drop">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
+                <div class="row">
+                    <div class="col-8">
+                        <a class="navbar-brand container" href="#">
+                            <img src="./assets/images/logo.png" alt="" style="margin-top: 3%">
+                        </a>
+                    </div>
+                    <div class="col-4 text-right">
+                        <button class="menu-drop">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
 
+                    </div>
                 </div>
             </div>
             <div class="row show-menu-bot">
-                    <ul>
-                            <li class="navigation us-section-m">
-                                NOSOTROS
-                            </li>
-                            <li class="navigation team-section">
-                                EQUIPO DE TRABAJO
-                            </li>
-                            <li class="navigation products-section-m">
-                                PRODUCTOS Y SERVICIOS
-                            </li>
-                            <li class="navigation culture-section-m">
-                                CULTURA FINANCIERA
-                            </li>
-                            <li class="navigation contact-section">
-                                CONTACTO
-                            </li>
-                            <li class="navigation blog-section">
-                                BLOG
-                            </li>
-                        </ul>
-                      
+                <ul>
+                    <li class="navigation us-section-m">
+                        NOSOTROS
+                    </li>
+                    <li class="navigation team-section">
+                        EQUIPO DE TRABAJO
+                    </li>
+                    <li class="navigation products-section-m">
+                        PRODUCTOS Y SERVICIOS
+                    </li>
+                    <li class="navigation culture-section-m">
+                        CULTURA FINANCIERA
+                    </li>
+                    <li class="navigation contact-section">
+                        CONTACTO
+                    </li>
+                    <li class="navigation blog-section">
+                        BLOG
+                    </li>
+                </ul>
+
             </div>
 
         </nav>
-        <div class="navbar-desktop-container navbar fixed-top d-none d-lg-block">
+        <div class="navbar-desktop-container navbar fixed-top d-none d-lg-block" id="nav-d">
             <div class="row justify-content-between">
                 <div class="col-md-4">
                     <a class="navbar-brand container" href="#">
@@ -76,18 +85,25 @@
                     </a>
                 </div>
                 <div class="col-md-8">
-                    <div class="text-right navbar-options" style="padding-top: 1%;padding-right: 5%">
+                    <div class="text-right navbar-options">
                         <p>
-                            <span>
-                               ACCESO A CLIENTES
+                            <span class="option-navbar">
+                                ACCESO A CLIENTES
                             </span>
-                            <span style="border-left: 2px solid #ffffff;padding-left: 2%">
+                            <span class="pipe">|</span>
+                            <span class="option-navbar ejectutives">
                                 EJECUTIVOS
                             </span>
-                            <span class="social-network" style="color: #FDC561">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-instagram" aria-hidden="true" style="margin: 0 3%;"></i>
-                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="social-network">
+                                <a href="https://web.facebook.com/increser">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/incresermx/">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                </a>
                             </span>
                         </p>
                         <p>
@@ -132,11 +148,9 @@
                                 <h2>GANA</h2>
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-10 align-self-center">
                                 <h1>INVIRTIENDO</h1>
-                            </div>
-                            <div class="col-md-2 text-center" style="padding-top: 4%">
-                                <button class="invest-button">INVIERTE</button>
+                                <button class="invest-button contact-button">INVIERTE</button>
 
                             </div>
                         </div>
@@ -153,13 +167,12 @@
                                 <h2>GANA</h2>
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-10 ">
                                 <h1>INVIRTIENDO</h1>
-                            </div>
-                            <div class="col-md-2 text-center" style="padding-top: 4%">
                                 <button class="invest-button">INVIERTE</button>
 
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -174,13 +187,12 @@
                                 <h2>GANA</h2>
 
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-10">
                                 <h1>INVIRTIENDO</h1>
-                            </div>
-                            <div class="col-md-2 text-center" style="padding-top: 4%">
                                 <button class="invest-button">INVIERTE</button>
 
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -206,47 +218,38 @@
                     </div>
                 </div>
                 <div class="row text-left product-items-container">
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-us text-left btn-block active-item" data-toggle="collapse" data-target="#collapseU1" id='collapeTriggerU1'>
-                                <i class="arrow right us-indicator"></i>¿Quiénes somos?</button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU1" id='collapeTriggerU1'>
+                            <i class="arrow right us-indicator"></i>¿Quiénes somos?</button>
 
-                        </div>
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-us text-left btn-block" id='collapeTriggerU2' data-toggle="collapse" data-target="#collapseU2">
-                                <i class="arrow right us-indicator"></i>Nuestra misión
-                            </button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
 
-                        </div>
+                        <button class="option-list option-list-us text-left btn-block" id='collapeTriggerU2' data-toggle="collapse" data-target="#collapseU2">
+                            <i class="arrow right us-indicator"></i>Nuestra misión
+                        </button>
+
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU3" id='collapeTriggerU3'>
-                                <i class="arrow right us-indicator"></i>Nuestra visión
-                            </button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
 
-                        </div>
+                        <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU3" id='collapeTriggerU3'>
+                            <i class="arrow right us-indicator"></i>Nuestra visión
+                        </button>
+
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU4" id='collapeTriggerU4'>
-                                <i class="arrow right us-indicator"></i>Nuestros valores
-                            </button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
 
-                        </div>
+                        <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU4" id='collapeTriggerU4'>
+                            <i class="arrow right us-indicator"></i>Nuestros valores
+                        </button>
+
                     </div>
                 </div>
             </div>
             <div class="col-md-8 col-12 products-left " style="padding: 0">
                 <div class="row">
-                    <div class="collapse show us-dynamic" id="collapseU1">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0;">
+                    <div class="collapse us-dynamic animated  " id="collapseU1">
+                        <div class="col-md-7 col-12 dynamic-box fadeInLeft" style="padding: 0;">
                             <div class="dynamic-selected s1 align-self-center">
                                 <h2 class="text-left">¿Quiénes somos?</h2>
                                 <ul>
@@ -266,18 +269,18 @@
                         </div>
                     </div>
 
-                    <div class="collapse us-dynamic" id="collapseU2">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                            <div class="dynamic-selected s2 align-self-center ">
+                    <div class="collapse us-dynamic " id="collapseU2">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                            <div class="dynamic-selected s2 align-self-top ">
                                 <h2 class="text-left">Misión</h2>
                                 <p class="text-left">Consolidar los programas de inversión inteligentes en nuestro país, satisfaciendo las necesidades
                                     financieras de nuestros clientes a través de soluciones adecuadas.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="collapse us-dynamic" id="collapseU3">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                            <div class="dynamic-selected s3 align-self-center">
+                    <div class="collapse us-dynamic " id="collapseU3">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                            <div class="dynamic-selected s3 align-self-top">
                                 <h2 class="text-left">Visión</h2>
                                 <p class="text-left">Ser el fondo de inversión más rentable siendo el preferido en el mercado nacional e internacional.</p>
                             </div>
@@ -285,9 +288,9 @@
                     </div>
 
 
-                    <div class="collapse us-dynamic" id="collapseU4">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                            <div class="dynamic-selected s4 align-self-center" style="padding-left: 10%">
+                    <div class="collapse us-dynamic " id="collapseU4">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                            <div class="dynamic-selected s4 align-self-top" style="padding-left: 10%">
                                 <h2 class="text-left">Valores</h2>
                                 <ul>
                                     <li>
@@ -588,8 +591,8 @@
         <div class="row">
             <div class="col-md-8 col-12 products-left" style="padding: 0">
                 <div class="row">
-                    <div class="collapse products-dymamic show" id="collapseP1">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                    <div class="collapse products-dymamic" id="collapseP1">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s1 align-self-center">
                                 <h2 class="text-right">Como trabajamos</h2>
                                 <p class="text-right">Nuestro equipo está integrado por un grupo de expertos analistas financieros para desarrollar
@@ -600,9 +603,9 @@
                         </div>
                     </div>
                     <div class="collapse products-dymamic" id="collapseP2">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s2 align-self-center">
-                                <h2 class="text-right">Tipos de inversión</h2>
+                                <h2 class="text-right h2-button">Tipos de inversión</h2>
                                 <p class="text-right">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
                                     planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
                                     en el mercado nacional e internacional.</p>
@@ -615,7 +618,7 @@
                     </div>
 
                     <div class="collapse products-dymamic" id="collapseP3">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s3 align-self-center">
                                 <h2 class="text-right">Garantia de inversión</h2>
                                 <p class="text-right">Somos una empresa 100% comprometida con nuestros clientes donde respaldamos y garantizados
@@ -625,14 +628,14 @@
                         </div>
                     </div>
                     <div class="collapse products-dymamic" id="collapseP4">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s4 align-self-center">
-                                <h2 class="text-right">Asesoría financiera</h2>
+                                <h2 class="text-right h2-button">Asesoría financiera</h2>
                                 <p class="text-right">Solicita tu asesoría financiera con nuestros expertos, nuestro objetivo es hacer trabajar
                                     tu dinero.
                                 </p>
                                 <p class="text-right">
-                                    <button>CONTÁCTANOS</button>
+                                    <button class="contact-button">CONTÁCTANOS</button>
 
                                 </p>
                             </div>
@@ -649,175 +652,175 @@
                     </div>
                 </div>
                 <div class="row text-right product-items-container">
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP1" id='collapeTriggerP1'>
-                                Cómo trabajamos
-                                <i class="arrow left"></i>
-                            </button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP1" id='collapeTriggerP1'>
+                            Cómo trabajamos
+                            <i class="arrow left"></i>
+                        </button>
 
-                        </div>
+
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-products btn-block text-right active" data-toggle="collapse" data-target="#collapseP2" id='collapeTriggerP2'>
-                                Tipos de inversión
-                                <i class="arrow left"></i>
-                            </button>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-products btn-block text-right active" data-toggle="collapse" data-target="#collapseP2"
+                            id='collapeTriggerP2'>
+                            Tipos de inversión
+                            <i class="arrow left"></i>
+                        </button>
 
-                        </div>
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container ">
-                            <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP3" id='collapeTriggerP3'>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP3" id='collapeTriggerP3'>
 
-                                Garantía de inversión
-                                <i class="arrow left"></i>
-                            </button>
-                            <div class="divider"></div>
+                            Garantía de inversión
+                            <i class="arrow left"></i>
+                        </button>
 
-                        </div>
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container ">
-                            <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP4" id='collapeTriggerP4'>
-                                Asesoría financiera
-                                <i class="arrow left"></i>
-                            </button>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP4" id='collapeTriggerP4'>
+                            Asesoría financiera
+                            <i class="arrow left"></i>
+                        </button>
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="products-mobile container-fluid" id="products-section-m">
-            <div class="row">
-                    <div class="col-12 products-right">
-                            <div class="row product-title-container">
-                                <div class="col-12 container">
-                                    <h2 class="text-center">Productos y servicios</h2>
-                                    <p class="text-center text-muted">Tenemos las mejores opciones de inversión</p>
-                                </div>
-                            </div>
-                            <div class="row text-center product-items-container">
-                                <div class="col-12" style="padding: 0">
-                                    <div class="item-container">
-                                        <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM1" id='collapeTriggerPM1'>
-                                                <i class="arrow left"></i>
-                                            
-                                            Cómo trabajamos
-                                        </button>
-                                        <div class="divider"></div>
-            
-                                    </div>
-                                </div>
-                                <div class="col-12" style="padding: 0">
-                                    <div class="item-container">
-                                        <button class="option-list option-list-products btn-block text-center active" data-toggle="collapse" data-target="#collapsePM2" id='collapeTriggerPM2'>
-                                                <i class="arrow left"></i>
-                                            
-                                            Tipos de inversión
-                                        </button>
-            
-                                    </div>
-                                </div>
-                                <div class="col-12" style="padding: 0">
-                                    <div class="item-container ">
-                                        <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM3" id='collapeTriggerPM3'>
-                                                <i class="arrow left"></i>
-            
-                                            Garantía de inversión
-                                        </button>
-                                        <div class="divider"></div>
-            
-                                    </div>
-                                </div>
-                                <div class="col-12" style="padding: 0">
-                                    <div class="item-container ">
-                                        <button class="option-list btn-block text-center" data-toggle="collapse" data-target="#collapsePM4" id='collapeTriggerPM4'>
-                                                <i class="arrow left"></i>
-                                            
-                                            Asesoría financiera
-                                        </button>
-            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                <div class="col-12 products-left" style="padding: 0">
-                    <div class="row">
-                        <div class="collapse products-dymamic show" id="collapsePM1">
-                            <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
-                                <div class="dynamic-selected s1 align-self-center">
-                                    <h2 class="text-center">Como trabajamos</h2>
-                                    <p class="text-center">Nuestro equipo está integrado por un grupo de expertos analistas financieros para desarrollar
-                                        el mejor plan de inversión en los distintos mercados bursátiles y lograr los rendimientos
-                                        establecidos.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse products-dymamic" id="collapsePM2">
-                            <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
-                                <div class="dynamic-selected s2 align-self-center">
-                                    <h2 class="text-center">Tipos de inversión</h2>
-                                    <p class="text-center">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
-                                        planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
-                                        en el mercado nacional e internacional.</p>
-                                    <p class="text-center">
-                                        <button>VER MAS</button>
-    
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="collapse products-dymamic" id="collapsePM3">
-                            <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
-                                <div class="dynamic-selected s3 align-self-center">
-                                    <h2 class="text-center">Garantia de inversión</h2>
-                                    <p class="text-center">Somos una empresa 100% comprometida con nuestros clientes donde respaldamos y garantizados
-                                        el 100% del capital invertido como su porcentaje de rendimiento.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="collapse products-dymamic" id="collapsePM4">
-                            <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
-                                <div class="dynamic-selected s4 align-self-center">
-                                    <h2 class="text-center">Asesoría financiera</h2>
-                                    <p class="text-center">Solicita tu asesoría financiera con nuestros expertos, nuestro objetivo es hacer trabajar
-                                        tu dinero.
-                                    </p>
-                                    <p class="text-center">
-                                        <button>CONTÁCTANOS</button>
-    
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-    
+        <div class="row">
+            <div class="col-12 products-right">
+                <div class="row product-title-container">
+                    <div class="col-12 container">
+                        <h2 class="text-center">Productos y servicios</h2>
+                        <p class="text-center text-muted">Tenemos las mejores opciones de inversión</p>
                     </div>
                 </div>
-                
+                <div class="row text-center product-items-container">
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container">
+                            <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM1"
+                                id='collapeTriggerPM1'>
+                                <i class="arrow left"></i>
+
+                                Cómo trabajamos
+                            </button>
+                            <div class="divider"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container">
+                            <button class="option-list option-list-products btn-block text-center active" data-toggle="collapse" data-target="#collapsePM2"
+                                id='collapeTriggerPM2'>
+                                <i class="arrow left"></i>
+
+                                Tipos de inversión
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container ">
+                            <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM3"
+                                id='collapeTriggerPM3'>
+                                <i class="arrow left"></i>
+
+                                Garantía de inversión
+                            </button>
+                            <div class="divider"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container ">
+                            <button class="option-list option-list-products btn-block text-center" data-toggle="collapse" data-target="#collapsePM4"
+                                id='collapeTriggerPM4'>
+                                <i class="arrow left"></i>
+
+                                Asesoría financiera
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-12 products-left" style="padding: 0">
+                <div class="row">
+                    <div class="collapse products-dymamic" id="collapsePM1">
+                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                            <div class="dynamic-selected s1 align-self-top">
+                                <h2 class="text-center">Como trabajamos</h2>
+                                <p class="text-center">Nuestro equipo está integrado por un grupo de expertos analistas financieros para desarrollar
+                                    el mejor plan de inversión en los distintos mercados bursátiles y lograr los rendimientos
+                                    establecidos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse products-dymamic" id="collapsePM2">
+                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                            <div class="dynamic-selected s2 align-self-top">
+                                <h2 class="text-center">Tipos de inversión</h2>
+                                <p class="text-center">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
+                                    planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
+                                    en el mercado nacional e internacional.</p>
+                                <p class="text-center">
+                                    <button>VER MAS</button>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse products-dymamic" id="collapsePM3">
+                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                            <div class="dynamic-selected s3 align-self-top">
+                                <h2 class="text-center">Garantia de inversión</h2>
+                                <p class="text-center">Somos una empresa 100% comprometida con nuestros clientes donde respaldamos y garantizados
+                                    el 100% del capital invertido como su porcentaje de rendimiento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse products-dymamic" id="collapsePM4">
+                        <div class="col-md-7 col-12 dynamic-box animated slideInRight" style="padding: 0">
+                            <div class="dynamic-selected s4 align-self-top">
+                                <h2 class="text-center">Asesoría financiera</h2>
+                                <p class="text-center">Solicita tu asesoría financiera con nuestros expertos, nuestro objetivo es hacer trabajar
+                                    tu dinero.
+                                </p>
+                                <p class="text-center">
+                                    <button class="contact-button">CONTÁCTANOS</button>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </section>
     <section class="phrases container-fluid">
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="row phrases-container justify-content-center">
                     <div class="carousel-item active text-center ">
-                        <h2>Cuanto más trabaje tu dinero <br> menos tendrás que trabajar tú</h2>
+                        <h2>Cuanto más trabaje tu dinero
+                            <br> menos tendrás que trabajar tú</h2>
                         <h3>(T Harv Eker)</h3>
                     </div>
                     <div class="carousel-item text-center ">
-                        <h2>Nunca dependas de una sola <br> fuente de ingresos</h2>
+                        <h2>Nunca dependas de una sola
+                            <br> fuente de ingresos</h2>
                         <h3>(Warret Buffett)</h3>
                     </div>
                     <div class="carousel-item text-center ">
-                        <h2>La libertad financiera es un proceso <br> mental, emocional y educativo</h2>
+                        <h2>La libertad financiera es un proceso
+                            <br> mental, emocional y educativo</h2>
                         <h3>(Robert Kiyosaki)</h3>
                     </div>
                 </div>
@@ -844,33 +847,27 @@
                     </div>
                 </div>
                 <div class="row text-left product-items-container">
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-culture text-left btn-block" data-toggle="collapse" data-target="#collapseC1" id='collapeTriggerC1'>
-                                <i class="arrow right"></i>Benefecios de Increser</button>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-culture text-left btn-block" data-toggle="collapse" data-target="#collapseC1" id='collapeTriggerC1'>
+                            <i class="arrow right"></i>Benefecios de Increser</button>
 
 
 
-                            <div class="divider"></div>
 
-                        </div>
                     </div>
-                    <div class="col-12" style="padding: 0">
-                        <div class="item-container">
-                            <button class="option-list option-list-culture text-left btn-block" data-toggle="collapse" data-target="#collapseC2" id='collapeTriggerC2'>
-                                <i class="arrow right"></i>Tipos de inversión
-                            </button>
-                            <div class="divider"></div>
+                    <div class="col-12 item-container" style="padding: 0">
+                        <button class="option-list option-list-culture text-left btn-block" data-toggle="collapse" data-target="#collapseC2" id='collapeTriggerC2'>
+                            <i class="arrow right"></i>Tipos de inversión
+                        </button>
 
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8 col-12 products-left" style="padding: 0">
                 <div class="row">
-                    <div class="collapse culture-dynamic show" id="collapseC1">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                            <div class="dynamic-selected s1 align-self-center">
+                    <div class="collapse culture-dynamic" id="collapseC1">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                            <div class="dynamic-selected s1 align-self-top">
                                 <h2 class="text-left">Beneficios de invertir en Increser</h2>
                                 <ul>
                                     <li>
@@ -889,8 +886,8 @@
                         </div>
                     </div>
                     <div class="collapse culture-dynamic" id="collapseC2">
-                        <div class="col-md-7 col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                            <div class="dynamic-selected s2 align-self-center">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft " style="padding: 0">
+                            <div class="dynamic-selected s2 align-self-top">
                                 <h2 class="text-left">Tipos de inversión</h2>
                                 <p class="text-left">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
                                     planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
@@ -908,81 +905,80 @@
             </div>
     </section>
     <section class="culture-mobile container-fluid" id="culture-section-m">
-            <div class="row">
-    
-                <div class="col-md-4 col-12 products-right">
-                    <div class="row product-title-container">
-                        <div class="col-12 container">
-                            <h2 class="text-center">Cultura financiera</h2>
-                            <p class="text-center text-muted">Tenemos las mejores opciones de inversión</p>
+        <div class="row">
+
+            <div class="col-md-4 col-12 products-right">
+                <div class="row product-title-container">
+                    <div class="col-12 container">
+                        <h2 class="text-center">Cultura financiera</h2>
+                        <p class="text-center text-muted">Tenemos las mejores opciones de inversión</p>
+                    </div>
+                </div>
+                <div class="row text-left product-items-container">
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container">
+                            <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM1" id='collapeTriggerCM1'>
+                                <i class="arrow right"></i>Benefecios de Increser</button>
+
+
+
+                            <div class="divider"></div>
+
                         </div>
                     </div>
-                    <div class="row text-left product-items-container">
-                        <div class="col-12" style="padding: 0">
-                            <div class="item-container">
-                                <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM1" id='collapeTriggerCM1'>
-                                    <i class="arrow right"></i>Benefecios de Increser</button>
-    
-    
-    
-                                <div class="divider"></div>
-    
-                            </div>
-                        </div>
-                        <div class="col-12" style="padding: 0">
-                            <div class="item-container">
-                                <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM2" id='collapeTriggerCM2'>
-                                    <i class="arrow right"></i>Tipos de inversión
-                                </button>
-                                <div class="divider"></div>
-    
-                            </div>
+                    <div class="col-12" style="padding: 0">
+                        <div class="item-container">
+                            <button class="option-list option-list-culture text-center btn-block" data-toggle="collapse" data-target="#collapseCM2" id='collapeTriggerCM2'>
+                                <i class="arrow right"></i>Tipos de inversión
+                            </button>
+                            <div class="divider"></div>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-12 products-left" style="padding: 0">
-                    <div class="row">
-                        <div class="collapse culture-dynamic show" id="collapseCM1">
-                            <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                                <div class="dynamic-selected s1 align-self-center">
-                                    <h2 class="text-center">Beneficios de invertir en Increser</h2>
-                                    <ul style="padding-left: 20vw">
-                                        <li >
-                                            Rendimientos 100% garantizados
-    
-                                        </li>
-                                        <li>
-                                            Acceso al mercado de valores
-                                        </li>
-                                        <li>Diversificación de mercados</li>
-                                        <li>Asesoría persola y profesional</li>
-                                        <li>Liquidez</li>
-                                        <li>Transparencia (regulado por el CNBV)</li>
-                                    </ul>
-                                </div>
+            </div>
+            <div class="col-md-8 col-12 products-left" style="padding: 0">
+                <div class="row">
+                    <div class="collapse culture-dynamic show" id="collapseCM1">
+                        <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
+                            <div class="dynamic-selected s1 align-self-top">
+                                <h2 class="text-center">Beneficios de invertir en Increser</h2>
+                                <ul style="padding-left: 20vw">
+                                    <li>
+                                        Rendimientos 100% garantizados
+
+                                    </li>
+                                    <li>
+                                        Acceso al mercado de valores
+                                    </li>
+                                    <li>Diversificación de mercados</li>
+                                    <li>Asesoría persola y profesional</li>
+                                    <li>Liquidez</li>
+                                    <li>Transparencia (regulado por el CNBV)</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="collapse culture-dynamic" id="collapseCM2">
-                            <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
-                                <div class="dynamic-selected s2 align-self-center">
-                                    <h2 class="text-center">Tipos de inversión</h2>
-                                    <p class="text-center">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
-                                        planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
-                                        en el mercado nacional e internacional.</p>
-                                    <p class="text-center">
-                                        <button>VER MAS</button>
-    
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-    
-    
                     </div>
+                    <div class="collapse culture-dynamic" id="collapseCM2">
+                        <div class="col-12 dynamic-box animated slideInLeft" style="padding: 0">
+                            <div class="dynamic-selected s2 align-self-top">
+                                <h2 class="text-center">Tipos de inversión</h2>
+                                <p class="text-center">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñados
+                                    planes personalizados para cada uno de nuestros clientes ofreciendo los más altos rendimientos
+                                    en el mercado nacional e internacional.</p>
+                                <p class="text-center">
+                                    <button>VER MAS</button>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+            </div>
     </section>
-    <section class="blog container-fluid" id="blog-section">
-        <div class="container">
+    <!-- <section class="blog container-fluid" id="blog-section">
             <div class="row product-title-container">
                 <div class="col-12">
                     <h2 class="text-center">Blog</h2>
@@ -1227,8 +1223,7 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+    </section> -->
     <section class="contact container-fluid text-white" id="contact-section">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -1240,7 +1235,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 phone-contact">
+            <div class="col-lg-6 col-12 phone-contact">
                 <h2 class="title-contact text-center col-12">Quiero que me llame un asesor.</h2>
                 <form>
                     <div class="form-group">
@@ -1255,30 +1250,24 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="dealInput" aria-describedby="dealInput" placeholder="Asunto:">
                     </div>
-                    <p class="text-right">
+                    <p class="text-right" style="margin-top: 8%;">
                         <button type="submit">ENVIAR</button>
 
                     </p>
                 </form>
             </div>
-            <div class="col-md-6 email-contact">
+            <div class="col-lg-6 col-12 email-contact">
                 <h2 class="title-contact text-center col-12">Quiero contacto por correo electronico</h2>
                 <form>
                     <div class="row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <input type="text" class="form-control" id="nameEmailInput" aria-describedby="nameEmailInput" placeholder="Nombre:">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <input type="email" class="form-control" id="emailInput" aria-describedby="emailInput" placeholder="Email:">
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="number" class="form-control" id="phoneInput" aria-describedby="phoneInput" placeholder="Telefono:">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" class="form-control" id="dealInput" aria-describedby="dealInput" placeholder="Asunto:">
-                        </div>
                         <div class="form-group col-md-12">
-                            <textarea class="form-control" id="formControlTextarea1" rows="6" placeholder="Comentario:"></textarea>
+                            <textarea class="form-control" id="formControlTextarea1" rows="4" placeholder="Comentario:"></textarea>
                         </div>
 
                     </div>
@@ -1299,24 +1288,26 @@
                 <div class="row justify-content-center">
                     <div class="col-md-10">
                         <div class="row justify-content-around">
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">NOSOTROS</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">EQUIPO DE TRABAJO</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">PRODUCTOS Y SERVICIOS</li>
-                            </a>
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">CULTURA FINANCIERA</li>
-                            </a>
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">CONTACTO</li>
-                            </a>
-                            <li class="list-inline-item">
-                                <a class="text-center text-white" href="#">BLOG</li>
-                            </a>
+                            <ul class="list-inline">
+                                <li class="navigation us-section list-inline-item text-center text-white">
+                                    NOSOTROS
+                                </li>
+                                <li class="navigation team-section list-inline-item text-center text-white">
+                                    EQUIPO DE TRABAJO
+                                </li>
+                                <li class="navigation products-section list-inline-item text-center text-white">
+                                    PRODUCTOS Y SERVICIOS
+                                </li>
+                                <li class="navigation culture-section list-inline-item text-center text-white">
+                                    CULTURA FINANCIERA
+                                </li>
+                                <li class="navigation contact-section list-inline-item text-center text-white">
+                                    CONTACTO
+                                </li>
+                                <li class="navigation blog-section list-inline-item text-center text-white">
+                                    BLOG
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1331,8 +1322,8 @@
             </div>
             <div class="row justify-content-center">
                 <p class="text-center text-white" style="margin-top: 1%">
-                    Corporativo Country Courts Blvd. Pedro Infante 2911 Int.
-                    <br> P.B. Local 1 Desarrollo Urbano Tres Ríos.
+                    Corporativo Country Courts Blvd. Pedro Infante 2911 Int. Local I.
+                    <br> Desarrollo Urbano Tres Ríos, Culiacan, Sinaloa CP 80020.
                 </p>
             </div>
             <div class="row justify-content-center social-network" style="margin-bottom: 1%">

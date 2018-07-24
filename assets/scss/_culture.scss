@@ -3,7 +3,6 @@
 }
 .culture {
     .products-left {
-        height: 91vh;
         background: url('../images/3.jpg');
         background-size: cover;
         padding-bottom: 50px;
@@ -11,14 +10,14 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            height: 60.5%;
-            background-color: rgba(200,208,212, .6);
+            height: 60.6%;
+            background-color: rgba(200,208,212, .95);
             display: flex;
             animation-duration: .5s;
             .dynamic-selected{
                 h2{
                    margin-left: 12%;
-                   margin-top: 15%;
+                   margin-top: 10%;
                     color: #052C41;
                     font-size: 3.5vw; 
                 }
@@ -60,6 +59,8 @@
                 padding-top: 10%;
                 padding-left: 7%;
                 font-size: 4vw;
+                font-weight: bold;
+
             }
             p {
                 color: #052C41;
@@ -68,6 +69,16 @@
             }
         }
         .product-items-container {
+            :not(.active-item) + div.item-container{
+                &::before{
+                    content : "";
+                    position: absolute;
+                    left    : 15%;
+                    height  : 1px;
+                    width   : 70%; 
+                    border-top: #052C41 3px solid;
+                }
+            }
             .active-item{
                 background-color: #052C41;
                     border: none;
@@ -91,18 +102,18 @@
                 transition: .3s ease all;
                 background-color: transparent;
                 
-                &:hover {
-                    background-color: #052C41;
-                    border: none;
-                    color: #FDC561;
-                    i {
-                        border: solid #ffffff;
-                        border-width: 0 3px 3px 0;
-                        display: inline-block;
-                        padding: 3px;
-                        margin-right: 1.5vw;
-                    }
-                }
+                // &:hover {
+                //     background-color: #052C41;
+                //     border: none;
+                //     color: #FDC561;
+                //     i {
+                //         border: solid #ffffff;
+                //         border-width: 0 3px 3px 0;
+                //         display: inline-block;
+                //         padding: 3px;
+                //         margin-right: 1.5vw;
+                //     }
+                // }
             }
         }
         i {

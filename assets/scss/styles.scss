@@ -17,6 +17,21 @@ button{
 }
 
 
+.fast{
+    animation-duration: .1s !important;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 0;
+  width: 0;
+}
+
+
+
+
+
 // colors
 // #052C41
 // #f4f8fb
