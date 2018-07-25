@@ -1,52 +1,67 @@
-.contact{
-    background-color: rgba(244,248,251,.1);
-    .title{
-        color: #052C41;
-        margin-top: 3%;
+.contact {
+    background-color: rgba(244, 248, 251, .1);
+    .title {
+        h2 {
+            color: #052C41;
+            padding-top: 5%;
+            padding-left: 7%;
+            font-size: 3vw;
+            font-weight: bold;
+        }p {
+            padding-left: 7%;
+            padding-bottom: 5%;
+            font-size: 1vw;
+            color: #052C41;
+        }
     }
-    .title-contact{
-        font-size: 2.5vw;
+    .title-contact {
+        color: #ffffff;
+                // padding-top: 10%;
+                // padding-left: 7%;
+                font-size: 2.5vw;
+                font-weight: bold;
     }
-    button{
+    button {
         background-color: #FDC561;
-        border: 1px solid #000000;
-        padding:1% 5%;
+        border: 2px solid #074160;
+        padding: 2.5%;
         color: #052C41;
         font-weight: bold;
         transition: .3s ease all;
-        font-size: 18px;
-        &:hover{
+        // font-size: 18px;
+        letter-spacing: 1px;
+        &:hover {
             color: #FDC561;
             background-color: #ffffff;
         }
     }
-    .phone-contact{
+    .phone-contact {
         background-color: #074160;
         padding: 3% 5%;
-        .form-group{
+        .form-group {
             margin-bottom: 4%;
-            input{
+            input {
                 border: 1px solid #ffffff;
-                background-color: #ffffff;
-                // color:#ffffff;
-                &::placeholder{
+                background-color: #ffffff; // color:#ffffff;
+                &::placeholder {
                     color: #000000;
                 }
             }
         }
     }
-    .email-contact{
+    .email-contact {
         background-color: #052C41;
         padding: 3% 5%;
-        input,textarea{
+        input,
+        textarea {
             // color: #ffffff;
             border: 1px solid #ffffff;
             background-color: #ffffff;
-                &::placeholder{
-                    color: #000000;
-                }
+            &::placeholder {
+                color: #000000;
+            }
         }
-        textarea{
+        textarea {
             margin-bottom: 4%;
             resize: none;
         }

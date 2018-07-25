@@ -1,11 +1,20 @@
-.team{
-    .title{
+.team {
+    .title {
         margin-top: 5%;
-        h2,p{
+        h2 {
             color: #052C41;
+            padding-top: 5%;
+            padding-left: 7%;
+            font-size: 3vw;
+            font-weight: bold;
+        }
+        p {
+            padding-left: 7%;
+            padding-bottom: 5%;
+            font-size: 1vw;
         }
     }
-    .team-members{
+    .team-members {
         .carousel-indicators li {
             display: inline-block;
             width: 10px;
@@ -23,42 +32,48 @@
             margin: 10px;
             background-color: rgb(255, 196, 113);
         }
-    .team-member{
-        padding-bottom: 5%;
-        background: rgb(244,248,251); /* Old browsers */
-        background: -moz-linear-gradient(top,  rgba(244,248,251,0) 22%, rgba(244,248,251,1) 22%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,rgba(244,248,251,0)), color-stop(22%,rgba(244,248,251,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* IE10+ */
-        background: linear-gradient(to bottom,  rgba(244,248,251,0) 22%,rgba(244,248,251,1) 22%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6d8d8',GradientType=0 ); /* IE6-9 */
-            .imageContainer{
+        .team-member {
+            padding-bottom: 5%;
+            background: rgb(244, 248, 251);
+            /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(244, 248, 251, 0) 22%, rgba(244, 248, 251, 1) 22%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(22%, rgba(244, 248, 251, 0)), color-stop(22%, rgba(244, 248, 251, 1)));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(244, 248, 251, 0) 22%, rgba(244, 248, 251, 1) 22%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(244, 248, 251, 0) 22%, rgba(244, 248, 251, 1) 22%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(244, 248, 251, 0) 22%, rgba(244, 248, 251, 1) 22%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, rgba(244, 248, 251, 0) 22%, rgba(244, 248, 251, 1) 22%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6d8d8', GradientType=0);
+            /* IE6-9 */
+            .imageContainer {
                 width: 150px;
-                    height: 150px;
-                img{
+                height: 150px;
+                img {
                     cursor: pointer;
                     margin-top: 5%;
                     width: 100%;
                     height: 100%;
                     border: 2px solid rgb(255, 196, 113);
-                    }
+                }
             }
-        
-        .team-member-text{
-            color: #052C41;
-            padding-top: 7%;
-            padding-left: 10%;
-            padding-right: 10%;
-            h2{
-                font-size: 18px;
-                font-weight: bold;
-            }
-            p{
-                font-size: 12px;
+            .team-member-text {
+                color: #052C41;
+                padding-top: 7%;
+                padding-left: 10%;
+                padding-right: 10%;
+                h2 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p {
+                    font-size: 12px;
+                }
             }
         }
-        
-        }   
     }
 }

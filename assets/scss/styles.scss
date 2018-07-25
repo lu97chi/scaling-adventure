@@ -1,43 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Gotham Light';
-
 }
+
 @font-face {
     font-family: 'Gotham Light';
     src: url('../fonts/Gotham-Light.otf');
 }
-@font-face{
+
+@font-face {
     font-family: 'Gotham Bold';
     src: url('../fonts/Gotham-Bold.otf');
 }
-button{
+
+button {
     cursor: pointer;
     outline: none !important;
 }
 
-
-.fast{
+.fast {
     animation-duration: .1s !important;
 }
 
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 0;
-  width: 0;
+    height: 0;
+    width: 0;
 }
-
-
-
-
 
 // colors
 // #052C41
 // #f4f8fb
 // rgb(255, 196, 113)
-
 // fonts
 // Gotham Light
 @import 'header';

@@ -76,6 +76,7 @@
                     ul {
                         padding-left: 5%;
                         li {
+                            list-style: none;
                             font-size: 3vw;
                         }
                     }
@@ -318,6 +319,16 @@
         }
     }
     .team {
+        .title{
+            h2{
+                font-weight: bold;
+                font-size: 8vw;
+                 margin-top: 5%
+            }
+            p{
+                font-size: 4vw;
+            }
+        } 
         .team-members {
             .team-member {
                 background: rgb(244, 248, 251);
@@ -337,25 +348,37 @@
             }
         }
     }
-}
-
-// @media only screen and (max-width: 991px and min-width 767px){
-//     .team{
-//         .team-members{
-//             .team-member{
-//                 background: rgb(244,248,251); /* Old browsers */
-//                 background: -moz-linear-gradient(top,  rgba(244,248,251,0) 20%, rgba(244,248,251,1) 20%); /* FF3.6+ */
-//                 background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(244,248,251,0)), color-stop(20%,rgba(244,248,251,1))); /* Chrome,Safari4+ */
-//                 background: -webkit-linear-gradient(top,  rgba(244,248,251,0) 20%,rgba(244,248,251,1) 20%); /* Chrome10+,Safari5.1+ */
-//                 background: -o-linear-gradient(top,  rgba(244,248,251,0) 20%,rgba(244,248,251,1) 20%); /* Opera 11.10+ */
-//                 background: -ms-linear-gradient(top,  rgba(244,248,251,0) 20%,rgba(244,248,251,1) 20%); /* IE10+ */
-//                 background: linear-gradient(to bottom,  rgba(244,248,251,0) 20%,rgba(244,248,251,1) 20%); /* W3C */
-//             }
-//         }
-//     }
-// }
-@media only screen and (max-width: 768px) {
+    .contact {
+        .title-contact {
+            font-size: 6vw;
+        }
+        .title{
+            h2{
+                font-weight: bold;
+                font-size: 8vw;
+                 margin-top: 5%
+            }
+            p{
+                font-size: 4vw;
+            }
+        }
+    }
     header {
+        .nav-mobile-container{
+
+         .show-menu-bot {
+             ul{
+                 margin-top: 4%;
+                 li{
+                     margin-bottom: 5%;
+                     &:last-child{
+                         margin-bottom: 0;
+                     }
+                 }
+
+             }
+        }
+    }
         height: 55vh !important;
         #carouselIndicators1 {
             height: 55vh !important;
@@ -400,10 +423,25 @@
     .about-footer {
         display: none;
     }
+    .phrases {
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            height: 3vw !important;
+            width: 3vw !important;
+        }
+    }
+    footer{
+        .copyright{
+            font-size: 3vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
 }
 
 @media only screen and (max-width: 340px) {
-    .us-mobile{
+    .us-mobile {
         .product-items-container {
             .item-container {
                 button {
@@ -421,7 +459,7 @@
             }
         }
     }
-    .culture-mobile{
+    .culture-mobile {
         .product-items-container {
             .item-container {
                 button {
@@ -433,7 +471,7 @@
 }
 
 @media only screen and (min-width: 340px) {
-    .us-mobile{
+    .us-mobile {
         .product-items-container {
             .item-container {
                 button {
@@ -451,10 +489,19 @@
             }
         }
     }
-    .product-items-container {
-        .item-container {
-            button {
-                padding-left: 24% !important;
+    // .product-items-container {
+    //     .item-container {
+    //         button {
+    //             padding-left: 24% !important;
+    //         }
+    //     }
+    // }
+    .culture-mobile {
+        .product-items-container {
+            .item-container {
+                button {
+                    padding-left: 20% !important;
+                }
             }
         }
     }
@@ -554,13 +601,3 @@
         }
     }
 }
-
-// @media only screen and (min-width: 577px){
-//     .us-mobile, .products-mobile, .culture-mobile{
-//         .product-items-container{
-//             button{
-//                 padding-left: 35% !important;
-//             }
-//         }
-//     }
-// }

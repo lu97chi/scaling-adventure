@@ -1,6 +1,6 @@
-.blog{
-    background-color: rgb(244,248,251);
-    .product-title-container{
+.blog {
+    background-color: rgb(244, 248, 251);
+    .product-title-container {
         padding-top: 3%;
         padding-bottom: 2%;
     }
@@ -21,27 +21,28 @@
         margin: 10px;
         background-color: rgb(255, 196, 113);
     }
-    img{
+    img {
         width: 100%;
     }
-    .blog-item{
+    .blog-item {
         padding-bottom: 5%;
         background-color: #ffffff;
-        .blog-item-text,.blog-item-footer{
+        .blog-item-text,
+        .blog-item-footer {
             padding-right: 5%;
             padding-left: 5%;
         }
-        .blog-item-text{
+        .blog-item-text {
             margin-top: 5%;
-            h2{
+            h2 {
                 font-size: 1.5vw;
             }
-            p{
+            p {
                 font-size: 1vw;
             }
         }
     }
-    button{
+    button {
         background-color: transparent;
         border: 2px solid #052C41;
         padding: 3%;
@@ -49,7 +50,7 @@
         font-family: 'Gotham Bold';
         letter-spacing: 1px;
         margin-bottom: 5%;
-        &:hover{
+        &:hover {
             color: #ffffff;
             background-color: #052C41;
         }

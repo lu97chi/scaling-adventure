@@ -1,6 +1,7 @@
-.products-mobile{
+.products-mobile {
     display: none;
 }
+
 .products {
     .products-left {
         background: url('../images/2.jpg');
@@ -9,26 +10,25 @@
             right: 0;
             bottom: 0;
             height: 59.6%;
-            background-color: rgba(200,208,212, .95);
+            background-color: rgba(200, 208, 212, .95);
             display: flex;
             animation-duration: .5s;
-
-            .dynamic-selected{
-                h2{
-                   margin-right: 12%;
+            .dynamic-selected {
+                h2 {
+                    // margin-right: 12%;
                     color: #052C41;
                     font-size: 3vw;
                 }
-                .h2-button{
+                .h2-button {
                     margin-top: 5%;
                 }
-                p{
+                p {
                     margin-right: 12%;
                     margin-left: 12%;
                     margin-bottom: 5%;
                     font-size: 1.15vw;
                 }
-                button{
+                button {
                     background-color: transparent;
                     border: 2px solid #052C41;
                     padding: 3%;
@@ -36,7 +36,7 @@
                     font-family: 'Gotham Bold';
                     letter-spacing: 1px;
                     margin-bottom: 5%;
-                    &:hover{
+                    &:hover {
                         color: #ffffff;
                         background-color: #052C41;
                     }
@@ -53,35 +53,33 @@
                 padding-right: 7%;
                 font-size: 4vw;
                 font-weight: bold;
-
             }
             p {
                 padding-right: 7%;
                 font-size: 1vw;
                 padding-bottom: 5%;
-
             }
         }
         .product-items-container {
-            :not(.active-item) + div.item-container{
-                &::before{
-                    content : "";
+            :not(.active-item)+div.item-container {
+                &::before {
+                    content: "";
                     position: absolute;
-                    left    : 15%;
-                    height  : 1px;
-                    width   : 70%; 
+                    left: 15%;
+                    height: 1px;
+                    width: 70%;
                     border-top: #FDC561 3px solid;
                 }
             }
-            .active-item{
+            .active-item {
                 background-color: #FDC561;
-                    i {
-                        border: solid #ffffff;
-                        border-width: 0 3px 3px 0;
-                        display: inline-block;
-                        padding: 3px;
-                        margin-left: 1.5vw;
-                    }
+                i {
+                    border: solid #ffffff;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                    margin-left: 1.5vw;
+                }
             }
             button {
                 padding-right: 10%;
@@ -93,8 +91,7 @@
                 cursor: pointer;
                 transition: .3s ease all;
                 outline: none;
-                background-color: transparent;
-                // &:hover {
+                background-color: transparent; // &:hover {
                 //     background-color: #FDC561;
                 //     i {
                 //         border: solid #ffffff;

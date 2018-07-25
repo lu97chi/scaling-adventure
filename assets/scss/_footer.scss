@@ -1,33 +1,49 @@
-footer{
+footer {
+    .contact-credentials{
+        .mail-link{
+                color: #FDC561;
+        }
+    }
     background-color: #074160;
-    .container{
+    .container {
         padding-top: 3%;
     }
-    ul{
-        li{
+    ul {
+        li {
             cursor: pointer;
         }
     }
-    .list-inline-item{
+    .list-inline-item {
         font-size: 1vw;
     }
-    .contact-credentials,.social-network{
-        span{
+    .contact-credentials,
+    .social-network {
+        span {
+                
+            
             color: #FDC561;
         }
     }
-    .social-network{
-
-        a{
+    .social-network {
+        a {
             margin-right: 5%;
-
-            i{
+            i {
                 color: #FDC561;
                 font-size: 24px;
             }
         }
     }
-    .copyright{
+    .copyright {
         font-weight: bold;
+    }
+    .about-footer{
+        ul{
+            li{
+                transition: .3s ease all;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
