@@ -218,11 +218,9 @@ header {
   .us .products-right .product-title-container h2 {
     color: #052C41;
     padding-top: 10%;
-    padding-left: 7%;
     font-size: 4vw;
     font-weight: bold; }
   .us .products-right .product-title-container p {
-    padding-left: 7%;
     padding-bottom: 5%;
     font-size: 1vw; }
 .us .products-right .product-items-container :not(.active-item) + div.item-container::before {
@@ -268,11 +266,9 @@ header {
   .team .title h2 {
     color: #052C41;
     padding-top: 5%;
-    padding-left: 7%;
     font-size: 3vw;
     font-weight: bold; }
   .team .title p {
-    padding-left: 7%;
     padding-bottom: 5%;
     font-size: 1vw; }
 .team .team-members .carousel-indicators li {
@@ -574,7 +570,6 @@ header {
   .contact .title h2 {
     color: #052C41;
     padding-top: 5%;
-    padding-left: 7%;
     font-size: 3vw;
     font-weight: bold; }
   .contact .title p {
@@ -696,7 +691,7 @@ footer {
         -webkit-transform: rotate(-45deg); }
       .us-mobile .products-right .product-title-container h2 {
         font-weight: bold;
-        font-size: 10vw;
+        font-size: 8vw !important;
         margin-top: 5%; }
       .us-mobile .products-right .dynamic-box .dynamic-selected {
         padding: 4% 5%; }
@@ -726,11 +721,9 @@ footer {
           .products-mobile .row .products-right .product-title-container h2 {
             color: #ffffff;
             padding-top: 4%;
-            padding-right: 7%;
-            font-size: 10vw;
+            font-size: 8vw !important;
             font-weight: bold; }
           .products-mobile .row .products-right .product-title-container p {
-            padding-right: 7%;
             font-size: 4vw; }
         .products-mobile .row .products-right .product-items-container :not(.active-item) + div + div.item-container::before {
           content: "";
@@ -840,7 +833,7 @@ footer {
           transform: rotate(-45deg);
           -webkit-transform: rotate(-45deg); }
         .culture-mobile .row .products-right .product-title-container h2 {
-          font-size: 9vw;
+          font-size: 8vw !important;
           margin-top: 5%;
           font-weight: bold; }
         .culture-mobile .row .products-right .product-title-container p {
@@ -905,7 +898,8 @@ footer {
     font-size: 8vw;
     margin-top: 5%; }
   .contact .title p {
-    font-size: 4vw; }
+    font-size: 4vw;
+    padding-left: 0%; }
 
   header {
     height: 55vh !important; }
@@ -954,7 +948,7 @@ footer {
     font-size: 3vw; } }
 @media only screen and (max-width: 340px) {
   .us-mobile .product-items-container .item-container button {
-    padding-left: 29% !important; }
+    padding-left: 28% !important; }
 
   .products-mobile .product-items-container .item-container button {
     padding-left: 22% !important; }
@@ -963,43 +957,36 @@ footer {
     padding-left: 20% !important; } }
 @media only screen and (min-width: 340px) {
   .us-mobile .product-items-container .item-container button {
-    padding-left: 29% !important; }
+    padding-left: 31% !important; }
 
   .products-mobile .product-items-container .item-container button {
-    padding-left: 28% !important; }
+    padding-left: 27% !important; }
 
   .culture-mobile .product-items-container .item-container button {
-    padding-left: 20% !important; } }
+    padding-left: 25% !important; } }
 @media only screen and (min-width: 410px) {
   .us-mobile .product-title-container h2,
   .culture-mobile .product-title-container h2 {
     font-size: 6vw !important;
-    text-align: center !important;
-    padding-right: 0 !important; }
+    text-align: center !important; }
   .us-mobile .product-title-container p,
   .culture-mobile .product-title-container p {
     font-size: 3vw !important; }
   .us-mobile .product-items-container .item-container button,
   .culture-mobile .product-items-container .item-container button {
-    padding-left: 30% !important; }
+    padding-left: 32% !important; }
 
   .products-mobile .product-items-container .item-container button {
     padding-left: 30% !important; } }
 @media only screen and (min-width: 530px) {
-  .us-mobile .product-title-container h2,
-  .culture-mobile .product-title-container h2 {
+  .us-mobile .product-title-container h2 {
     font-size: 6vw !important;
     text-align: center !important;
     padding-right: 0 !important; }
-  .us-mobile .product-title-container p,
-  .culture-mobile .product-title-container p {
+  .us-mobile .product-title-container p {
     font-size: 3vw !important; }
-  .us-mobile .product-items-container .item-container button,
-  .culture-mobile .product-items-container .item-container button {
-    padding-left: 38% !important; }
-  .us-mobile .product-items-container .item-container button,
-  .culture-mobile .product-items-container .item-container button {
-    padding-left: 33% !important; }
+  .us-mobile .product-items-container .item-container button {
+    padding-left: 35% !important; }
 
   .products-mobile .product-items-container .item-container button {
     padding-left: 33% !important; } }
