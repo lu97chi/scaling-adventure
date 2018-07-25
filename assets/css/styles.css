@@ -629,11 +629,17 @@ footer {
   footer .contact-credentials span,
   footer .social-network span {
     color: #FDC561; }
-  footer .social-network a {
-    margin-right: 5%; }
-    footer .social-network a i {
+  footer .social-network {
+    padding-left: 1vw;
+    margin: 0 auto; }
+    footer .social-network a {
       color: #FDC561;
       font-size: 24px; }
+    footer .social-network .fa-facebook {
+      padding-left: 3px;
+      padding-right: 3px; }
+    footer .social-network .fa-instagram {
+      margin: 0 5%; }
   footer .copyright {
     font-weight: bold; }
   footer .about-footer ul li {
@@ -699,11 +705,9 @@ footer {
         padding: 4% 5%; }
         .us-mobile .products-right .dynamic-box .dynamic-selected h2 {
           font-size: 6vw; }
-        .us-mobile .products-right .dynamic-box .dynamic-selected ul {
-          padding-left: 5%; }
-          .us-mobile .products-right .dynamic-box .dynamic-selected ul li {
-            list-style: none;
-            font-size: 3vw; }
+        .us-mobile .products-right .dynamic-box .dynamic-selected ul li {
+          list-style: none;
+          font-size: 3vw; }
         .us-mobile .products-right .dynamic-box .dynamic-selected p {
           font-size: 3vw; }
 
