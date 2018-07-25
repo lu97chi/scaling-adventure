@@ -693,6 +693,8 @@ footer {
         font-weight: bold;
         font-size: 8vw !important;
         margin-top: 5%; }
+      .us-mobile .products-right .product-title-container p {
+        font-size: 4vw !important; }
       .us-mobile .products-right .dynamic-box .dynamic-selected {
         padding: 4% 5%; }
         .us-mobile .products-right .dynamic-box .dynamic-selected h2 {
