@@ -581,6 +581,15 @@
             }
         }
     }
+    .culture-mobile {
+        .product-items-container {
+            .item-container {
+                button {
+                    padding-left: 32% !important;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 710px) {

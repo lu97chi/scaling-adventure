@@ -994,7 +994,10 @@ footer {
     padding-left: 35% !important; }
 
   .products-mobile .product-items-container .item-container button {
-    padding-left: 33% !important; } }
+    padding-left: 33% !important; }
+
+  .culture-mobile .product-items-container .item-container button {
+    padding-left: 32% !important; } }
 @media only screen and (min-width: 710px) {
   .us-mobile .product-title-container h2,
   .products-mobile .product-title-container h2,
