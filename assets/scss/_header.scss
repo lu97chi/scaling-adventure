@@ -183,6 +183,7 @@ header {
                     font-size: 6vw;
                     font-weight: 600;
                     display: inline;
+                    margin-right: 1vw;
                 }
                 button {
                     position: absolute;
@@ -193,7 +194,7 @@ header {
                     font-size: 1vw;
                     padding: .5% 1%;
                     font-weight: 800;
-                    margin-left: 1vw;
+                    // margin-left: 1vw;
                     transition: .3s ease all;
                     &:hover {
                         background-color: rgb(255, 196, 113);
@@ -224,6 +225,7 @@ header {
                     font-size: 6vw;
                     font-weight: 600;
                     display: inline;
+                    margin-right: 1vw;
                 }
                 button {
                     position: absolute;
@@ -234,7 +236,7 @@ header {
                     font-size: 1vw;
                     padding: .5% 1%;
                     font-weight: 800;
-                    margin-left: 1vw;
+                    // margin-left: 1vw;
                     transition: .3s ease all;
                     &:hover {
                         background-color: rgb(255, 196, 113);

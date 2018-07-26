@@ -159,7 +159,8 @@ header {
         header #carouselIndicators1 .fourth-slide .header-text h1 {
           font-size: 6vw;
           font-weight: 600;
-          display: inline; }
+          display: inline;
+          margin-right: 1vw; }
         header #carouselIndicators1 .fourth-slide .header-text button {
           position: absolute;
           top: 33%;
@@ -169,7 +170,6 @@ header {
           font-size: 1vw;
           padding: .5% 1%;
           font-weight: 800;
-          margin-left: 1vw;
           transition: .3s ease all; }
           header #carouselIndicators1 .fourth-slide .header-text button:hover {
             background-color: #ffc471;
@@ -199,7 +199,8 @@ header {
         header #carouselIndicators1 .third-slide .header-text h1 {
           font-size: 6vw;
           font-weight: 600;
-          display: inline; }
+          display: inline;
+          margin-right: 1vw; }
         header #carouselIndicators1 .first-slide .header-text button,
         header #carouselIndicators1 .second-slide .header-text button,
         header #carouselIndicators1 .third-slide .header-text button {
@@ -211,7 +212,6 @@ header {
           font-size: 1vw;
           padding: .5% 1%;
           font-weight: 800;
-          margin-left: 1vw;
           transition: .3s ease all; }
           header #carouselIndicators1 .first-slide .header-text button:hover,
           header #carouselIndicators1 .second-slide .header-text button:hover,
@@ -700,7 +700,7 @@ footer {
     footer .about-footer ul li:hover {
       text-decoration: underline; }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
   .us-mobile {
     padding-left: 0;
     padding-right: 0;
@@ -949,6 +949,8 @@ footer {
     /* IE10+ */
     background: linear-gradient(to bottom, rgba(244, 248, 251, 0) 16%, #f4f8fb 16%);
     /* W3C */ }
+  .team #carouselIndicators2 .carousel-indicators {
+    bottom: -6% !important; }
 
   .contact .title-contact {
     font-size: 6vw; }
@@ -962,6 +964,8 @@ footer {
 
   header {
     height: 55vh !important; }
+    header .nav-mobile-container .show-menu div a {
+      font-size: 4vw; }
     header .nav-mobile-container .show-menu-bot ul {
       margin-top: 4%; }
       header .nav-mobile-container .show-menu-bot ul li {
@@ -972,7 +976,8 @@ footer {
       height: 55vh !important; }
       header #carouselIndicators1 .first-slide,
       header #carouselIndicators1 .second-slide,
-      header #carouselIndicators1 .third-slide {
+      header #carouselIndicators1 .third-slide,
+      header #carouselIndicators1 .fourth-slide {
         height: 55vh !important; }
     header .carousel-indicators {
       bottom: -10px; }
@@ -998,13 +1003,22 @@ footer {
   .about-footer {
     display: none; }
 
+  .phrases h2 {
+    font-size: 4vw; }
+  .phrases h3 {
+    font-size: 4vw; }
   .phrases .carousel-control-prev-icon,
   .phrases .carousel-control-next-icon {
     height: 3vw !important;
     width: 3vw !important; }
 
   footer .copyright {
-    font-size: 2vw; } }
+    font-size: 2vw;
+    margin-top: 5%; }
+  footer .direction {
+    font-size: 2.5vw; }
+  footer .contact-credentials span {
+    font-size: 4vw; } }
 @media only screen and (min-width: 480px) and (max-width: 853px) and (orientation: landscape) {
   header {
     height: 100vh !important; }

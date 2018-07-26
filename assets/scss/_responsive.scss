@@ -1,4 +1,4 @@
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
     .us-mobile {
         padding-left: 0;
         padding-right: 0;
@@ -349,6 +349,12 @@
                 /* W3C */
             }
         }
+        #carouselIndicators2{
+            .carousel-indicators{
+                bottom: -6% !important;
+            }
+        }
+        
     }
     .contact {
         .title-contact {
@@ -368,7 +374,13 @@
     }
     header {
         .nav-mobile-container{
-
+            .show-menu{
+                div{
+                    a{
+                        font-size: 4vw;
+                    }
+                }
+            }
          .show-menu-bot {
              ul{
                  margin-top: 4%;
@@ -387,7 +399,8 @@
             height: 55vh !important;
             .first-slide,
             .second-slide,
-            .third-slide {
+            .third-slide,
+            .fourth-slide {
                 height: 55vh !important;
             }
         }
@@ -427,6 +440,12 @@
         display: none;
     }
     .phrases {
+        h2{
+            font-size: 4vw;
+        }
+        h3{
+            font-size: 4vw;
+        }
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             height: 3vw !important;
@@ -436,6 +455,16 @@
     footer{
         .copyright{
             font-size: 2vw;
+            margin-top: 5%;
+
+        }
+        .direction{
+            font-size: 2.5vw;
+        }
+        .contact-credentials{
+            span{
+                font-size: 4vw;
+            }
         }
     }
 }
