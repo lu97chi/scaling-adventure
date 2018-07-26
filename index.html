@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="./assets/js/jquery-2.0.3.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
+    <!-- <script src="./assets/js/jquery.mobile-1.4.5.min.js"></script> -->
     <script src="./assets/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="overflow-x: hidden">
     <header style="height: 100vh;">
         <nav class="nav-mobile-container navbar fixed-top d-block d-lg-none" style="padding: 0">
             <div id="nav-m">
@@ -23,9 +23,9 @@
                     <div class="col-4 ">
                         <a href="#" style="margin-right:10vw">CLIENTES</a>
                     </div>
-                    <!-- <div class="col-4">
-                        <a href="#">USUARIO</a>
-                    </div> -->
+                    <div class="col-4">
+                        <!-- <a href="#">USUARIO</a> -->
+                    </div>
                     <div class="col-4 social-network">
                         <a href="https://web.facebook.com/increser" target="_blank">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -135,6 +135,8 @@
                 <li data-target="#carouselIndicators1" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselIndicators1" data-slide-to="1"></li>
                 <li data-target="#carouselIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators1" data-slide-to="3"></li>
+
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active first-slide">
@@ -180,15 +182,15 @@
                     <div class="header-text">
                         <div class="row">
                             <div class="col-md-12">
-                                <h3>Trabaja tu dinero</h3>
+                                <h3>Inversiones</h3>
 
                             </div>
                             <div class="col-md-12">
-                                <h2>GANA</h2>
+                                <h2>INTELIGENTES DISEÑADAS</h2>
 
                             </div>
                             <div class="col-md-10">
-                                <h1>INVIRTIENDO</h1>
+                                <h1>A TU MEDIDA</h1>
                                 <button class="invest-button">INVIERTE</button>
 
                             </div>
@@ -196,6 +198,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item fourth-slide">
+                        <div class="header-text">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h3>Estudio y analisis <br> financiero sólido para</h3>
+    
+                                </div>
+                                <div class="col-md-8">
+                                    <h2>OFRECER UN PRODUCTO</h2>
+    
+                                </div>
+                                <div class="col-md-6">
+                                    <h1>FUERTE Y CONFIABLE</h1>
+                                    <button class="invest-button">INVIERTE</button>
+    
+                                </div>
+                                <div class="col-md-8">
+                                    <h4>Productos fuertes y confiables</h4>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
             </div>
             <a class="carousel-control-prev" href="#carouselIndicators1" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -217,7 +242,7 @@
                         <p class="text-left text-muted">Conoce más a fondo sobre Increser</p>
                     </div>
                 </div>
-                <div class="row text-left product-items-container">
+                <div class="row text-left product-items-container" id='us-text-left'>
                     <div class="col-12 item-container" style="padding: 0">
                         <button class="option-list option-list-us text-left btn-block" data-toggle="collapse" data-target="#collapseU1" id='collapeTriggerU1'>
                             <i class="arrow right us-indicator"></i>¿Quiénes somos?</button>
@@ -248,9 +273,9 @@
             </div>
             <div class="col-md-8 col-12 products-left " style="padding: 0">
                 <div class="row">
-                    <div class="collapse us-dynamic animated  " id="collapseU1">
-                        <div class="col-md-7 col-12 dynamic-box fadeInLeft" style="padding: 0;">
-                            <div class="dynamic-selected s1 align-self-center">
+                    <div class="collapse us-dynamic   " id="collapseU1">
+                        <div class="col-md-7 col-12 dynamic-box us-selected animated fadeInLeft" style="padding: 0;">
+                            <div class="dynamic-selected s1  align-self-center">
                                 <h2 class="text-center">¿Quiénes somos?</h2>
                                 <ul>
                                     <li>
@@ -269,8 +294,8 @@
                         </div>
                     </div>
 
-                    <div class="collapse us-dynamic " id="collapseU2">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                    <div class="collapse us-dynamic  " id="collapseU2">
+                        <div class="col-md-7 col-12 dynamic-box us-selected animated fadeInLeft" style="padding: 0">
                             <div class="dynamic-selected s2 align-self-top ">
                                 <h2 class="text-center">Misión</h2>
                                 <p class="text-center">Consolidar los programas de inversión inteligentes en nuestro país, satisfaciendo las necesidades
@@ -278,18 +303,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collapse us-dynamic " id="collapseU3">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                    <div class="collapse us-dynamic" id="collapseU3">
+                        <div class="col-md-7 col-12 dynamic-box us-selected animated fadeInLeft" style="padding: 0">
+                            <div class="dynamic-selected s3 align-self-top ">
+                                <h2 class="text-center">Visión</h2>
+                                <p class="text-center">
+                                    Ser el fondo de inversión 
+                                    mas rentable siendo el preferido en el mercado nacional e internacional.
+                                 .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="collapse us-dynamic animated" id="collapseU3">
+                        <div class="col-md-7 col-12 dynamic-box us-selected  fadeInLeft" style="padding: 0">
                             <div class="dynamic-selected s3 align-self-top">
                                 <h2 class="text-center">Visión</h2>
                                 <p class="text-center">Ser el fondo de inversión más rentable siendo el preferido en el mercado nacional e internacional.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <div class="collapse us-dynamic " id="collapseU4">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box us-selected animated fadeInLeft" style="padding: 0">
                             <div class="dynamic-selected s4 align-self-top">
                                 <h2 class="text-center">Valores</h2>
                                 <ul class="last-us">
@@ -413,7 +449,7 @@
                 </div>
             </div>
     </section>
-    <section class="team container-fluid" id="team-section">
+    <section class="team container-fluid p-0" id="team-section" style="padding: 0">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <div class="title text-center">
@@ -592,7 +628,7 @@
                         <li data-target="#carouselIndicators2" data-slide-to="1"></li>
                         <li data-target="#carouselIndicators2" data-slide-to="2"></li>
                     </ol>
-                    <div class="container">
+                    <div>
                             <div class="carousel-inner d-block d-md-none">
                                     <div class="carousel-item active">
                                             <div class="row">
@@ -673,7 +709,7 @@
             <div class="col-md-8 col-12 products-left" style="padding: 0">
                 <div class="row">
                     <div class="collapse products-dymamic" id="collapseP1">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box products-selected animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s1 align-self-center">
                                 <h2 class="text-center">Como trabajamos</h2>
                                 <p class="text-center">Nuestro equipo está integrado por un grupo de expertos analistas financieros para desarrollar
@@ -684,7 +720,7 @@
                         </div>
                     </div>
                     <div class="collapse products-dymamic" id="collapseP2">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box products-selected animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s2 align-self-center">
                                 <h2 class="text-center h2-button">Tipos de inversión</h2>
                                 <p class="text-center">Nuestro objetivo es cubrir las necesidades financieras de nuestros clientes por ello diseñamos
@@ -699,7 +735,7 @@
                     </div>
 
                     <div class="collapse products-dymamic" id="collapseP3">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box products-selected animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s3 align-self-center">
                                 <h2 class="text-center">Garantía de inversión</h2>
                                 <p class="text-center">Somos una empresa 100% comprometida con nuestros clientes donde respaldamos y garantizados
@@ -709,7 +745,7 @@
                         </div>
                     </div>
                     <div class="collapse products-dymamic" id="collapseP4">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInRight" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box products-selected animated fadeInRight" style="padding: 0">
                             <div class="dynamic-selected s4 align-self-center">
                                 <h2 class="text-center h2-button">Asesoría financiera</h2>
                                 <p class="text-center">Solicita tu asesoría financiera con nuestros expertos, nuestro objetivo es hacer trabajar
@@ -732,7 +768,7 @@
                         <p class="text-right text-muted">Tenemos las mejores opciones de inversión</p>
                     </div>
                 </div>
-                <div class="row text-right product-items-container">
+                <div class="row text-right product-items-container" id='products-text-left'>
                     <div class="col-12 item-container" style="padding: 0">
                         <button class="option-list option-list-products btn-block text-right" data-toggle="collapse" data-target="#collapseP1" id='collapeTriggerP1'>
                             Cómo trabajamos
@@ -907,7 +943,7 @@
                         <p class="text-left text-muted">Asesoría personal y profesional</p>
                     </div>
                 </div>
-                <div class="row text-left product-items-container">
+                <div class="row text-left product-items-container" id="culture-text-left">
                     <div class="col-12 item-container" style="padding: 0">
                         <button class="option-list option-list-culture text-left btn-block" data-toggle="collapse" data-target="#collapseC1" id='collapeTriggerC1'>
                             <i class="arrow right"></i>Cultura financiera</button>
@@ -927,7 +963,7 @@
             <div class="col-md-8 col-12 products-left" style="padding: 0">
                 <div class="row">
                         <div class="collapse culture-dynamic" id="collapseC1">
-                                <div class="col-md-7 col-12 dynamic-box animated fadeInLeft " style="padding: 0">
+                                <div class="col-md-7 col-12 dynamic-box animated fadeInLeft culture-selected" style="padding: 0">
                                     <div class="dynamic-selected s2 align-self-top">
                                         <h2 class="text-left">Cultura financiera</h2>
                                         <p class="text-center">Cuida tus finanzas e incrementa tus ingresos mensuales invirtiendo tu dinero, pon a trabajar tu
@@ -941,7 +977,7 @@
                                 </div>
                             </div>
                     <div class="collapse culture-dynamic" id="collapseC2">
-                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft" style="padding: 0">
+                        <div class="col-md-7 col-12 dynamic-box animated fadeInLeft culture-selected" style="padding: 0">
                             <div class="dynamic-selected s1 align-self-top">
                                 <h2 class="text-left">Beneficios de invertir en Increser</h2>
                                 <ul>
@@ -1274,6 +1310,8 @@
                 </div>
             </div>
     </section> -->
+    <div id="map" style="width: 100%;height: 500px;"></div>
+
     <section class="contact container-fluid text-white" id="contact-section">
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -1328,9 +1366,6 @@
                 </form>
             </div>
         </div>
-    </section>
-    <section class="map container-fluid">
-        <h1>MAPS</h1>
     </section>
     <footer class="container-fluid">
         <div class="container">
@@ -1412,7 +1447,29 @@
             </div>
         </div>
     </footer>
+    <script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="./assets/js/index.js"></script>
+    
 </body>
 
 </html>

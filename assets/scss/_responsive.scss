@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
     .us-mobile {
         padding-left: 0;
         padding-right: 0;
@@ -435,11 +435,42 @@
     }
     footer{
         .copyright{
-            font-size: 3vw;
+            font-size: 2vw;
         }
     }
 }
 
+@media only screen and (min-width: 480px) 
+                   and (max-width: 853px) 
+                   and (orientation: landscape) {
+
+header {
+    height: 100vh !important;
+    #carouselIndicators1 {
+        height: 100vh !important;
+        .first-slide,
+        .second-slide,
+        .third-slide {
+            height: 100vh !important;
+        }
+    }
+    .nav-mobile-container{
+
+     .show-menu-bot {
+         ul{
+             margin-top: 4%;
+             li{
+                 font-size: 2vw;
+                 margin-bottom: 5%;
+                 &:last-child{
+                     margin-bottom: 0;
+                 }
+             }
+
+         }
+    }
+}
+}}
 
 @media only screen and (max-width: 340px) {
     .us-mobile {
