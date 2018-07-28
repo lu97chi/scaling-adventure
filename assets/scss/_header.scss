@@ -170,10 +170,10 @@ header {
             .header-text {
                 color: #ffffff;
                 position: absolute;
-                top: 35%;
+                top: 30%;
                 left: 10%;
                 h2 {
-                    font-size: 4vw;
+                    font-size: 3.5vw;
                 }
                 h3 {
                     font-size: 3vw;
@@ -185,13 +185,16 @@ header {
                     display: inline;
                     margin-right: 1vw;
                 }
+                h4{
+                    color: rgb(255, 196, 113);
+                }
                 button {
                     position: absolute;
-                    top: 33%;
+                    top: 65%;
                     background-color: transparent;
                     border: 2px solid rgb(255, 196, 113);
                     color: rgb(255, 196, 113);
-                    font-size: 1vw;
+                    font-size: 1.5vw;
                     padding: .5% 1%;
                     font-weight: 800;
                     // margin-left: 1vw;
@@ -203,8 +206,51 @@ header {
                 }
             }
         }
+        .second-slide{
+            height: 100vh;
+           
+            .header-text {
+                color: #ffffff;
+                position: absolute;
+                top: 35%;
+                left: 10%;
+                h2 {
+                    font-size: 4vw;
+                }
+                h3 {
+                    font-size: 4vw;
+                    color: rgb(255, 196, 113);
+                }
+                h1 {
+                    font-size: 5.5vw;
+                    font-weight: 600;
+                    display: inline;
+                    margin-right: 1vw;
+                }
+                h4{
+                    font-size: 1.45vw;
+                    color: rgb(255, 196, 113);
+                }
+                button {
+                    position: absolute;
+                    top: 54%;
+                    background-color: transparent;
+                    border: 2px solid rgb(255, 196, 113);
+                    color: rgb(255, 196, 113);
+                    font-size: 1.5vw;
+                    padding: .5% 1%;
+                    font-weight: 800;
+                    margin-left: 1vw;
+                    left: 95%;
+                    transition: .3s ease all;
+                    &:hover {
+                        background-color: rgb(255, 196, 113);
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
         .first-slide,
-        .second-slide,
         .third-slide,
         {
             height: 100vh;
@@ -229,11 +275,11 @@ header {
                 }
                 button {
                     position: absolute;
-                    top: 33%;
+                    top: 25%;
                     background-color: transparent;
                     border: 2px solid rgb(255, 196, 113);
                     color: rgb(255, 196, 113);
-                    font-size: 1vw;
+                    font-size: 1.5vw;
                     padding: .5% 1%;
                     font-weight: 800;
                     // margin-left: 1vw;

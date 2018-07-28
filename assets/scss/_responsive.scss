@@ -66,7 +66,7 @@
                     font-size: 8vw !important;
                     margin-top: 5%;
                 }
-                p{
+                p {
                     font-size: 4vw !important;
                 }
             }
@@ -104,8 +104,7 @@
                     background-color: #052C41;
                     h2 {
                         color: #ffffff;
-                        padding-top: 4%;
-                        // padding-right: 7%;
+                        padding-top: 4%; // padding-right: 7%;
                         font-size: 8vw !important;
                         font-weight: bold;
                     }
@@ -321,16 +320,17 @@
         }
     }
     .team {
-        .title{
-            h2{
+        margin-bottom: 10%;
+        .title {
+            h2 {
                 font-weight: bold;
                 font-size: 8vw;
-                 margin-top: 5%
+                margin-top: 5%
             }
-            p{
+            p {
                 font-size: 4vw;
             }
-        } 
+        }
         .team-members {
             .team-member {
                 background: rgb(244, 248, 251);
@@ -349,157 +349,190 @@
                 /* W3C */
             }
         }
-        #carouselIndicators2{
-            .carousel-indicators{
-                bottom: -6% !important;
+        #carouselIndicators2 {
+            .carousel-indicators {
+                bottom: -9% !important;
             }
         }
-        
     }
     .contact {
         .title-contact {
             font-size: 6vw;
         }
-        .title{
-            h2{
+        .title {
+            h2 {
                 font-weight: bold;
                 font-size: 8vw;
-                 margin-top: 5%
+                margin-top: 5%
             }
-            p{
+            p {
                 font-size: 4vw;
                 padding-left: 0%;
             }
         }
     }
     header {
-        .nav-mobile-container{
-            .show-menu{
-                div{
-                    a{
-                        font-size: 4vw;
+        #carouselIndicators1 {
+            .fourth-slide {
+                .header-text {
+                    button {
+                        margin-top:6vw; 
                     }
                 }
             }
-         .show-menu-bot {
-             ul{
-                 margin-top: 4%;
-                 li{
-                     margin-bottom: 5%;
-                     &:last-child{
-                         margin-bottom: 0;
-                     }
-                 }
+            .second-slide{
+                .header-text {
+                    button {
+                        left: 2.5%; 
+                        margin-left: 0;
+                    }
 
-             }
+                    h4{
+                        font-size: 2vw;
+
+                    }
+                }
+            }
+        }
+    
+    .nav-mobile-container {
+        .show-menu {
+            div {
+                a {
+                    font-size: 4vw;
+                }
+            }
+        }
+        .show-menu-bot {
+            ul {
+                margin-top: 4%;
+                li {
+                    margin-bottom: 5%;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
+    height: 55vh !important;
+    #carouselIndicators1 {
         height: 55vh !important;
-        #carouselIndicators1 {
+        .first-slide,
+        .second-slide,
+        .third-slide,
+        .fourth-slide {
             height: 55vh !important;
+        }
+    }
+    .carousel-indicators {
+        bottom: -10px;
+        .active,
+        li {
+            height: 10px;
+            width: 10px;
+        }
+    }
+    .carousel-inner {
+        .carousel-item {
+            .header-text {
+                padding-left: 3%;
+                h1 {
+                    display: block !important;
+                    font-size: 18px !important;
+                }
+                h2 {
+                    font-size: 20px !important;
+                }
+                h3 {
+                    margin-top: 5%;
+                    font-size: 20px !important;
+                }
+                button {
+                    top: 100% !important;
+                    position: relative; // left:4%;
+                    font-size: 10px !important;
+                }
+            }
+        }
+    }
+}
+
+.about-footer {
+    display: none;
+}
+
+.phrases {
+    h2 {
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 4vw;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 3vw !important;
+        width: 3vw !important;
+    }
+}
+
+footer {
+    .copyright {
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+    .direction {
+        font-size: 2.5vw;
+    }
+    .contact-credentials {
+        span {
+            font-size: 4vw;
+        }
+    }
+}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 853px) and (orientation: landscape) {
+    header {
+        height: 100vh !important;
+        #carouselIndicators1 {
+            height: 100vh !important;
             .first-slide,
             .second-slide,
             .third-slide,
             .fourth-slide {
-                height: 55vh !important;
+                height: 100vh !important;
             }
         }
-        .carousel-indicators {
-            bottom: -10px;
-            .active,
-            li {
-                height: 10px;
-                width: 10px;
-            }
-        }
-        .carousel-inner {
-            .carousel-item {
-                .header-text {
-                    padding-left: 3%;
-                    h1 {
-                        display: block !important;
-                        font-size: 18px !important;
-                    }
-                    h2 {
-                        font-size: 20px !important;
-                    }
-                    h3 {
-                        margin-top: 5%;
-                        font-size: 20px !important;
-                    }
-                    button {
-                        top: 100% !important;
-                        position: relative; // left:4%;
-                        font-size: 10px !important;
+        .nav-mobile-container {
+            .show-menu-bot {
+                ul {
+                    margin-top: 4%;
+                    li {
+                        font-size: 2vw;
+                        margin-bottom: 5%;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
         }
     }
-    .about-footer {
-        display: none;
-    }
-    .phrases {
-        h2{
-            font-size: 4vw;
-        }
-        h3{
-            font-size: 4vw;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            height: 3vw !important;
-            width: 3vw !important;
-        }
-    }
-    footer{
-        .copyright{
-            font-size: 2vw;
-            margin-top: 5%;
+}
 
-        }
-        .direction{
-            font-size: 2.5vw;
-        }
-        .contact-credentials{
-            span{
-                font-size: 4vw;
-            }
-        }
+@media only screen and (max-width: 580px) {
+    header .nav-mobile-container .menu-drop {
+        margin-top: 3.5vh;
     }
 }
 
-@media only screen and (min-width: 480px) 
-                   and (max-width: 853px) 
-                   and (orientation: landscape) {
-
-header {
-    height: 100vh !important;
-    #carouselIndicators1 {
-        height: 100vh !important;
-        .first-slide,
-        .second-slide,
-        .third-slide {
-            height: 100vh !important;
-        }
-    }
-    .nav-mobile-container{
-
-     .show-menu-bot {
-         ul{
-             margin-top: 4%;
-             li{
-                 font-size: 2vw;
-                 margin-bottom: 5%;
-                 &:last-child{
-                     margin-bottom: 0;
-                 }
-             }
-
-         }
+@media only screen and (min-width: 581px) {
+    header .nav-mobile-container .menu-drop {
+        margin-top: 5vh;
     }
 }
-}}
 
 @media only screen and (max-width: 340px) {
     .us-mobile {
@@ -549,8 +582,7 @@ header {
                 }
             }
         }
-    }
-    // .product-items-container {
+    } // .product-items-container {
     //     .item-container {
     //         button {
     //             padding-left: 24% !important;
@@ -574,8 +606,7 @@ header {
         .product-title-container {
             h2 {
                 font-size: 6vw !important;
-                text-align: center !important;
-                // padding-right: 0 !important;
+                text-align: center !important; // padding-right: 0 !important;
                 // padding-left: 32%;
             }
             p {
@@ -599,16 +630,15 @@ header {
             }
         }
     }
-    .culture-mobile{
-        .product-items-container{
-            .item-container{
-                button{
+    .culture-mobile {
+        .product-items-container {
+            .item-container {
+                button {
                     padding-left: 29% !important;
                 }
             }
         }
     }
-    
 }
 
 @media only screen and (min-width: 530px) {
