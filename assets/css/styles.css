@@ -144,26 +144,21 @@ header {
       background-position: center;
       min-height: 100%;
       max-height: 100%; }
-    header #carouselIndicators1 .fourth-slide {
+    header #carouselIndicators1 .fourth-slide, header #carouselIndicators1 .second-slide {
       height: 100vh; }
-      header #carouselIndicators1 .fourth-slide .header-text {
+      header #carouselIndicators1 .fourth-slide .header-text, header #carouselIndicators1 .second-slide .header-text {
         color: #ffffff;
         position: absolute;
         top: 30%;
         left: 10%; }
-        header #carouselIndicators1 .fourth-slide .header-text h2 {
+        header #carouselIndicators1 .fourth-slide .header-text h2, header #carouselIndicators1 .second-slide .header-text h2 {
           font-size: 3.5vw; }
-        header #carouselIndicators1 .fourth-slide .header-text h3 {
+        header #carouselIndicators1 .fourth-slide .header-text h3, header #carouselIndicators1 .second-slide .header-text h3 {
           font-size: 3vw;
           color: #ffc471; }
-        header #carouselIndicators1 .fourth-slide .header-text h1 {
-          font-size: 6vw;
-          font-weight: 600;
-          display: inline;
-          margin-right: 1vw; }
-        header #carouselIndicators1 .fourth-slide .header-text h4 {
+        header #carouselIndicators1 .fourth-slide .header-text h4, header #carouselIndicators1 .second-slide .header-text h4 {
           color: #ffc471; }
-        header #carouselIndicators1 .fourth-slide .header-text button {
+        header #carouselIndicators1 .fourth-slide .header-text button, header #carouselIndicators1 .second-slide .header-text button {
           position: absolute;
           top: 65%;
           background-color: transparent;
@@ -173,44 +168,21 @@ header {
           padding: .5% 1%;
           font-weight: 800;
           transition: .3s ease all; }
-          header #carouselIndicators1 .fourth-slide .header-text button:hover {
+          header #carouselIndicators1 .fourth-slide .header-text button:hover, header #carouselIndicators1 .second-slide .header-text button:hover {
             background-color: #ffc471;
             color: #ffffff; }
-    header #carouselIndicators1 .second-slide {
-      height: 100vh; }
-      header #carouselIndicators1 .second-slide .header-text {
-        color: #ffffff;
-        position: absolute;
-        top: 35%;
-        left: 10%; }
-        header #carouselIndicators1 .second-slide .header-text h2 {
-          font-size: 4vw; }
-        header #carouselIndicators1 .second-slide .header-text h3 {
-          font-size: 4vw;
-          color: #ffc471; }
-        header #carouselIndicators1 .second-slide .header-text h1 {
-          font-size: 5.5vw;
-          font-weight: 600;
-          display: inline;
-          margin-right: 1vw; }
-        header #carouselIndicators1 .second-slide .header-text h4 {
-          font-size: 1.45vw;
-          color: #ffc471; }
-        header #carouselIndicators1 .second-slide .header-text button {
-          position: absolute;
-          top: 54%;
-          background-color: transparent;
-          border: 2px solid #ffc471;
-          color: #ffc471;
-          font-size: 1.5vw;
-          padding: .5% 1%;
-          font-weight: 800;
-          margin-left: 1vw;
-          left: 95%;
-          transition: .3s ease all; }
-          header #carouselIndicators1 .second-slide .header-text button:hover {
-            background-color: #ffc471;
-            color: #ffffff; }
+    header #carouselIndicators1 .fourth-slide h1 {
+      font-size: 6vw;
+      font-weight: 600;
+      display: inline;
+      margin-right: 1vw; }
+    header #carouselIndicators1 .second-slide button {
+      top: 62% !important; }
+    header #carouselIndicators1 .second-slide h1 {
+      font-size: 5vw;
+      font-weight: 600;
+      display: inline;
+      margin-right: 1vw; }
     header #carouselIndicators1 .first-slide,
     header #carouselIndicators1 .third-slide {
       height: 100vh; }
@@ -998,13 +970,6 @@ footer {
 
   header {
     height: 55vh !important; }
-    header #carouselIndicators1 .fourth-slide .header-text button {
-      margin-top: 6vw; }
-    header #carouselIndicators1 .second-slide .header-text button {
-      left: 2.5%;
-      margin-left: 0; }
-    header #carouselIndicators1 .second-slide .header-text h4 {
-      font-size: 2vw; }
     header .nav-mobile-container .show-menu div a {
       font-size: 4vw; }
     header .nav-mobile-container .show-menu-bot ul {
@@ -1034,12 +999,26 @@ footer {
       header .carousel-inner .carousel-item .header-text h2 {
         font-size: 20px !important; }
       header .carousel-inner .carousel-item .header-text h3 {
-        margin-top: 5%;
+        margin-top: 23%;
         font-size: 20px !important; }
       header .carousel-inner .carousel-item .header-text button {
         top: 100% !important;
         position: relative;
         font-size: 10px !important; }
+    header .carousel-inner .fourth-slide .header-text .button-desk, header .carousel-inner .second-slide .header-text .button-desk {
+      left: 100% !important; }
+    header .carousel-inner .fourth-slide .header-text h3, header .carousel-inner .second-slide .header-text h3 {
+      font-size: 3vw !important; }
+    header .carousel-inner .fourth-slide .header-text h2, header .carousel-inner .second-slide .header-text h2 {
+      font-size: 4vw !important; }
+    header .carousel-inner .fourth-slide .header-text h1, header .carousel-inner .second-slide .header-text h1 {
+      font-size: 6vw !important; }
+    header .carousel-inner .fourth-slide h4 {
+      font-size: 4vw !important; }
+    header .carousel-inner .second-slide button {
+      margin-top: 2% !important; }
+    header .carousel-inner .second-slide h4 {
+      font-size: 2.5vw !important; }
 
   .about-footer {
     display: none; }

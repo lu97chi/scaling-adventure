@@ -69,7 +69,7 @@ $(document).ready(function () {
 		}, 500)
 	})
 	// despues averiguo que hace :D
-	$("#carouselIndicators2").on("touchstart", function (event) {
+	$('#carouselIndicators2, #carouselIndicators1, #carouselControls').on("touchstart", function (event) {
 		var xClick = event.originalEvent.touches[0].pageX;
 		$(this).one("touchmove", function (event) {
 			var xMove = event.originalEvent.touches[0].pageX;

@@ -155,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item second-slide">
+                <!-- <div class="carousel-item second-slide">
                     <div class="header-text">
                         <div class="row">
                             <div class="col-md-12">
@@ -168,8 +168,37 @@
                             </div>
                             <div class="col-md-6">
                                 <h1 class="align-self-center">INCREMENTAR  TU INVERSIÓN</h1>
+                                <button class="invest-button d-none d-md-block">INVIERTE</button>
+
+                            </div>
+                            <div class="col-md-8">
                                 <h4>Nuestro equipo de trabajo te brinda seguridad y confianza</h4>
-                                <button class="invest-button">INVIERTE</button>
+                                <button class="invest-button d-block d-md-none">INVIsERTE</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+                <div class="carousel-item second-slide">
+                    <div class="header-text">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3>Te ofrecemos</h3>
+
+                            </div>
+                            <div class="col-md-8">
+                                <h2>MAYOR SEGURIDAD PARA</h2>
+
+                            </div>
+                            <div class="col-md-6">
+                                <h1>INCREMENTAR  TU INVERSIÓN</h1>
+                                <button class="invest-button d-none d-md-block" style="left: 85%;">INVIERTE</button>
+
+                            </div>
+                            <div class="col-md-8">
+                                <h4>Nuestro equipo de trabajo te brinda seguridad y confianza</h4>
+                                <button class="invest-button d-block d-md-none">INVIERTE</button>
 
                             </div>
 
@@ -209,11 +238,13 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h1>FUERTE Y CONFIABLE</h1>
-                                    <button class="invest-button">INVIERTE</button>
+                                    <button class="invest-button d-none d-md-block" style="left: 85%;">INVIERTE</button>
     
                                 </div>
                                 <div class="col-md-8">
                                     <h4>Productos fuertes y confiables</h4>
+                                    <button class="invest-button d-block d-md-none">INVIERTE</button>
+
                                 </div>
     
                             </div>
@@ -1446,25 +1477,26 @@
     </footer>
     <script>
       function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+        var myLatLng = {lat: 24.791763, lng: -107.438907};
 
         // Create a map object and specify the DOM element
         // for display.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,
-          zoom: 4
+          zoom: 16
         });
 
         // Create a marker and set its position.
         var marker = new google.maps.Marker({
           map: map,
           position: myLatLng,
-          title: 'Hello World!'
+          title: 'Increser',
+          icon: 'https://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
         });
       }
 
     </script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
