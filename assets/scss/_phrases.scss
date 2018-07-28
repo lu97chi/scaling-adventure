@@ -1,0 +1,25 @@
+.phrases {
+    background: url('../images/navbar_bg.png');
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 2vw !important;
+        width: 2vw !important;
+    }
+    h2::before {
+        content: open-quote;
+        color: #FDC561;
+    }
+    h2::after {
+        content: close-quote;
+        color: #FDC561;
+    }
+    h3 {
+        font-style: italic;
+        color: #FDC561;
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+}
