@@ -1,4 +1,4 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
     .us-mobile {
         padding-left: 0;
         padding-right: 0;
@@ -328,7 +328,7 @@
                 margin-top: 5%
             }
             p {
-                font-size: 4vw;
+                font-size: 3vw;
             }
         }
         .team-members {
@@ -401,6 +401,12 @@
         .fourth-slide {
             height: 55vh !important;
         }
+
+        .fourth-slide{
+            .header-text{
+                top: 20%;
+            }
+        }
     }
     .carousel-indicators {
         bottom: -10px;
@@ -416,10 +422,6 @@
                 padding-left: 3%;
                 h1 {
                     display: block !important;
-                    font-size: 18px !important;
-                }
-                h2 {
-                    font-size: 20px !important;
                 }
                 h3 {
                     margin-top: 23%;
@@ -433,26 +435,6 @@
             }
             
         }
-        // .second-slide{
-        //     .header-text{
-        //         button{
-        //             left: 2% !important;
-        //             // position: relative;
-        //         }
-        //         h4{
-        //             font-size: 2.5vw !important;
-        //             display: block;
-        //         }
-        //         h3{
-        //             font-size: 4vw !important;
-        //         }
-        //     }
-
-            
-        //     // h1{
-        //     //     font-size: 14px;
-        //     // }
-        // }
         .fourth-slide, .second-slide{
             .header-text{
                 .button-desk{
@@ -465,18 +447,13 @@
                     font-size: 4vw !important;
                 }
                 h1{
-                    font-size: 6vw !important;
+                    font-size: 5vw !important;
                 }
-            }
-        }
-        .fourth-slide{
-            h4{
-                font-size: 4vw !important;
             }
         }
         .second-slide{
             button{
-                margin-top: 2% !important;
+                margin-top: 4% !important;
             }
             h4{
                 font-size: 2.5vw !important;
@@ -520,6 +497,8 @@ footer {
 
 }
 
+
+
 @media only screen and (min-width: 480px) and (max-width: 853px) and (orientation: landscape) {
     header {
         height: 100vh !important;
@@ -530,6 +509,26 @@ footer {
             .third-slide,
             .fourth-slide {
                 height: 100vh !important;
+            }
+            .first-slide{
+                .header-text{
+                    top: 10% !important;
+                }
+            }
+            .second-slide{
+                .header-text{
+                    top: 5% !important;
+                }
+            }
+            .third-slide{
+                .header-text{
+                    top: 10% !important;
+                }
+            }
+            .fourth-slide{
+                .header-text{
+                    top: 0%;
+                }
             }
         }
         .nav-mobile-container {
@@ -557,7 +556,7 @@ footer {
 
 @media only screen and (min-width: 581px) {
     header .nav-mobile-container .menu-drop {
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
 }
 

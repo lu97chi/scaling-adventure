@@ -4,13 +4,20 @@ footer {
                 color: #FDC561;
         }
     }
-    background-color: #074160;
+    background-color: #052C41;
     .container {
         padding-top: 3%;
     }
     ul {
         li {
             cursor: pointer;
+            span{
+                margin-left: 5px;
+                
+            }
+            // border-right: 1px solid red;
+            // padding-right: 1%;
+            // padding-left: 0;
         }
     }
     .list-inline-item {

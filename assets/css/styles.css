@@ -674,13 +674,15 @@ header {
       resize: none; }
 
 footer {
-  background-color: #074160; }
+  background-color: #052C41; }
   footer .contact-credentials .mail-link {
     color: #FDC561; }
   footer .container {
     padding-top: 3%; }
   footer ul li {
     cursor: pointer; }
+    footer ul li span {
+      margin-left: 5px; }
   footer .list-inline-item {
     font-size: 1vw; }
   footer .contact-credentials span,
@@ -704,7 +706,7 @@ footer {
     footer .about-footer ul li:hover {
       text-decoration: underline; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .us-mobile {
     padding-left: 0;
     padding-right: 0;
@@ -939,7 +941,7 @@ footer {
       font-size: 8vw;
       margin-top: 5%; }
     .team .title p {
-      font-size: 4vw; }
+      font-size: 3vw; }
     .team .team-members .team-member {
       background: #f4f8fb;
       /* Old browsers */
@@ -985,6 +987,8 @@ footer {
       header #carouselIndicators1 .third-slide,
       header #carouselIndicators1 .fourth-slide {
         height: 55vh !important; }
+      header #carouselIndicators1 .fourth-slide .header-text {
+        top: 20%; }
     header .carousel-indicators {
       bottom: -10px; }
       header .carousel-indicators .active,
@@ -994,10 +998,7 @@ footer {
     header .carousel-inner .carousel-item .header-text {
       padding-left: 3%; }
       header .carousel-inner .carousel-item .header-text h1 {
-        display: block !important;
-        font-size: 18px !important; }
-      header .carousel-inner .carousel-item .header-text h2 {
-        font-size: 20px !important; }
+        display: block !important; }
       header .carousel-inner .carousel-item .header-text h3 {
         margin-top: 23%;
         font-size: 20px !important; }
@@ -1012,11 +1013,9 @@ footer {
     header .carousel-inner .fourth-slide .header-text h2, header .carousel-inner .second-slide .header-text h2 {
       font-size: 4vw !important; }
     header .carousel-inner .fourth-slide .header-text h1, header .carousel-inner .second-slide .header-text h1 {
-      font-size: 6vw !important; }
-    header .carousel-inner .fourth-slide h4 {
-      font-size: 4vw !important; }
+      font-size: 5vw !important; }
     header .carousel-inner .second-slide button {
-      margin-top: 2% !important; }
+      margin-top: 4% !important; }
     header .carousel-inner .second-slide h4 {
       font-size: 2.5vw !important; }
 
@@ -1049,6 +1048,14 @@ footer {
       header #carouselIndicators1 .third-slide,
       header #carouselIndicators1 .fourth-slide {
         height: 100vh !important; }
+      header #carouselIndicators1 .first-slide .header-text {
+        top: 10% !important; }
+      header #carouselIndicators1 .second-slide .header-text {
+        top: 5% !important; }
+      header #carouselIndicators1 .third-slide .header-text {
+        top: 10% !important; }
+      header #carouselIndicators1 .fourth-slide .header-text {
+        top: 0%; }
     header .nav-mobile-container .show-menu-bot ul {
       margin-top: 4%; }
       header .nav-mobile-container .show-menu-bot ul li {
@@ -1061,7 +1068,7 @@ footer {
     margin-top: 3.5vh; } }
 @media only screen and (min-width: 581px) {
   header .nav-mobile-container .menu-drop {
-    margin-top: 5vh; } }
+    margin-top: 3vh; } }
 @media only screen and (max-width: 340px) {
   .us-mobile .product-items-container .item-container button {
     padding-left: 28% !important; }
