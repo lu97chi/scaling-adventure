@@ -251,6 +251,8 @@ header {
       margin-left: 15%;
       margin-bottom: 5%;
       font-size: 1.15vw; }
+    .us .products-left .dynamic-box .dynamic-selected .remove-list {
+      list-style: none; }
     .us .products-left .dynamic-box .dynamic-selected p {
       margin-right: 12%;
       margin-left: 12%;
