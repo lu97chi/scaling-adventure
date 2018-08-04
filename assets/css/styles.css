@@ -1052,13 +1052,11 @@ footer {
       header #carouselIndicators1 .first-slide .header-text {
         top: 10% !important; }
       header #carouselIndicators1 .second-slide .header-text {
-        top: 5% !important; }
-      header #carouselIndicators1 .second-slide button {
-        margin-left: 5%; }
+        top: 10% !important; }
       header #carouselIndicators1 .third-slide .header-text {
         top: 10% !important; }
       header #carouselIndicators1 .fourth-slide .header-text {
-        top: 0%; }
+        top: 10%; }
     header .nav-mobile-container .show-menu-bot ul {
       margin-top: 4%; }
       header .nav-mobile-container .show-menu-bot ul li {
