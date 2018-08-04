@@ -1053,6 +1053,8 @@ footer {
         top: 10% !important; }
       header #carouselIndicators1 .second-slide .header-text {
         top: 5% !important; }
+      header #carouselIndicators1 .second-slide button {
+        margin-left: 5%; }
       header #carouselIndicators1 .third-slide .header-text {
         top: 10% !important; }
       header #carouselIndicators1 .fourth-slide .header-text {
